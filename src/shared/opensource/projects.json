@@ -1,11 +1,37 @@
 {
   "data": [
     {
-      "id": "proj-groot-os",
-      "name": "Groot-OS-Voice-AI",
-      "createdAt": "2026-04-26T16:35:04Z",
-      "url": "https://groot-frontend-orpin.vercel.app",
-      "description": "🧠 Real-time voice-reactive neural AI interface integrating Groq Whisper (v3-turbo), multi-LLM failover router, RAG memory, and streaming neural TTS with sub-1.5s latency.",
+      "id": "proj-lisa",
+      "name": "Lisa — Multimodal Personal AI Assistant",
+      "createdAt": "2026-04-24T18:05:16Z",
+      "firstCommit": "2026-04-24T18:13:41Z",
+      "firstCommitFormatted": "Apr 24, 2026 (18:13 UTC)",
+      "url": "https://github.com/ameyasharma-ai/lisa",
+      "description": "Autonomous voice-reactive personal assistant pipeline integrating local speech recognition, vision context parsing, and background system actions.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos-opencv"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        }
+      ]
+    },
+    {
+      "id": "proj-AI-backend",
+      "name": "AI Backend — Core Neural Inference Engine",
+      "createdAt": "2026-04-26T14:00:04Z",
+      "firstCommit": "2026-04-24T18:13:41Z",
+      "firstCommitFormatted": "Apr 24, 2026 (18:13 UTC)",
+      "url": "https://github.com/ameyasharma-ai/AI-backend",
+      "description": "High-throughput asynchronous Python microservice routing LLM reasoning queries across local models and cloud providers.",
       "isFork": false,
       "languages": [
         {
@@ -17,47 +43,123 @@
           "iconifyClass": "simple-icons:fastapi"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "WebSockets",
-          "iconifyClass": "simple-icons:socketdotio"
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
         }
       ]
     },
     {
-      "id": "proj-inline-editor",
-      "name": "InLine-CodeSync",
-      "createdAt": "2026-04-28T09:27:53Z",
-      "url": "https://inline-frontend.vercel.app",
-      "description": "⚡ Real-time collaborative web code editor (Google Docs for code) featuring multi-cursor presence, full-duplex WebSockets, CodeMirror 6, and AI Copilot.",
+      "id": "proj-groot-backend",
+      "name": "Groot OS — Audio Pipeline & Streaming Engine",
+      "createdAt": "2026-04-26T16:26:43Z",
+      "firstCommit": "2026-04-26T16:28:54Z",
+      "firstCommitFormatted": "Apr 26, 2026 (16:28 UTC)",
+      "url": "https://github.com/ameyasharma-ai/groot-backend",
+      "description": "High-performance Python backend coordinating Groq Whisper v3-turbo audio transcription, multi-LLM fallback routers, and neural Edge TTS.",
       "isFork": false,
       "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "Groq",
+          "iconifyClass": "simple-icons:openai"
+        }
+      ]
+    },
+    {
+      "id": "proj-groot-frontend",
+      "name": "Groot OS — Neural Voice Interface",
+      "createdAt": "2026-04-26T16:35:04Z",
+      "firstCommit": "2026-04-26T16:55:25Z",
+      "firstCommitFormatted": "Apr 26, 2026 (16:55 UTC)",
+      "url": "https://groot-frontend-orpin.vercel.app",
+      "description": "Ultra-low-latency real-time voice AI interface with WebSocket audio streaming, live visualizer waveforms, and instant audio interruption.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
         {
           "name": "TypeScript",
           "iconifyClass": "logos-typescript-icon"
         },
         {
-          "name": "React",
-          "iconifyClass": "logos-react"
+          "name": "WebSockets",
+          "iconifyClass": "simple-icons:socketdotio"
         },
+        {
+          "name": "TailwindCSS",
+          "iconifyClass": "logos-tailwindcss-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-inline-backend",
+      "name": "InLine — WebSocket Room Synchronization Daemon",
+      "createdAt": "2026-04-28T09:02:27Z",
+      "firstCommit": "2026-04-28T09:06:47Z",
+      "firstCommitFormatted": "Apr 28, 2026 (09:06 UTC)",
+      "url": "https://github.com/ameyasharma-ai/inline-backend",
+      "description": "Distributed Node.js WebSocket orchestration layer managing room session isolation, operational transform locks, and sub-15ms sync broadcast.",
+      "isFork": false,
+      "languages": [
         {
           "name": "Node.js",
           "iconifyClass": "logos-nodejs-icon"
         },
         {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Express",
+          "iconifyClass": "simple-icons:express"
+        }
+      ]
+    },
+    {
+      "id": "proj-inline-frontend",
+      "name": "InLine — Real-Time Collaborative Code Editor",
+      "createdAt": "2026-04-28T09:27:53Z",
+      "firstCommit": "2026-04-28T09:28:50Z",
+      "firstCommitFormatted": "Apr 28, 2026 (09:28 UTC)",
+      "url": "https://inline-frontend.vercel.app",
+      "description": "Google Docs for software engineers: Multi-user real-time collaborative coding workspace with live presence cursors, Monaco Editor, and AI completions.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
           "name": "Socket.io",
           "iconifyClass": "simple-icons:socketdotio"
+        },
+        {
+          "name": "Monaco",
+          "iconifyClass": "simple-icons:visualstudiocode"
         }
       ]
     },
     {
       "id": "proj-codegraph",
-      "name": "CodeGraph",
+      "name": "CodeGraph — Interactive AST Visualizer",
       "createdAt": "2026-04-30T12:57:05Z",
+      "firstCommit": "2026-04-30T12:58:41Z",
+      "firstCommitFormatted": "Apr 30, 2026 (12:58 UTC)",
       "url": "https://codegraph-eight.vercel.app",
-      "description": "📊 Production-grade AI codebase visualizer mapping GitHub ASTs and ES module imports into interactive dependency graphs with animated path tracing and Supabase caching.",
+      "description": "Developer productivity tool parsing GitHub repository ASTs and ES import statements into interactive dynamic dependency graphs with Supabase caching.",
       "isFork": false,
       "languages": [
         {
@@ -69,183 +171,23 @@
           "iconifyClass": "logos-typescript-icon"
         },
         {
+          "name": "React Flow",
+          "iconifyClass": "logos-react"
+        },
+        {
           "name": "Supabase",
           "iconifyClass": "simple-icons:supabase"
-        },
-        {
-          "name": "TailwindCSS",
-          "iconifyClass": "logos-tailwindcss-icon"
-        }
-      ]
-    },
-    {
-      "id": "proj-arclane-engine",
-      "name": "Arclane-Autonomous-Engine",
-      "createdAt": "2026-05-26T16:26:58Z",
-      "url": "https://github.com/ameyasharma-ai",
-      "description": "🌐 24/7 autonomous client acquisition engine: headless browser automation with anti-bot bypass, automated client site deployments to Vercel, and remote Telegram bot HUD.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Node.js",
-          "iconifyClass": "logos-nodejs-icon"
-        },
-        {
-          "name": "Docker",
-          "iconifyClass": "logos-docker-icon"
-        },
-        {
-          "name": "Playwright",
-          "iconifyClass": "logos-playwright"
-        }
-      ]
-    },
-    {
-      "id": "proj-fish-detector",
-      "name": "Fish-Detector-CV",
-      "createdAt": "2026-09-27T06:17:15Z",
-      "url": "https://github.com/ameyasharma-ai/fish-detector",
-      "description": "🐟 Real-time marine aquaculture computer vision pipeline: custom-trained YOLOv4 neural network for underwater fish detection, centroid tracking, and biomass analytics.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "TensorFlow",
-          "iconifyClass": "logos-tensorflow"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
-        }
-      ]
-    },
-    {
-      "id": "proj-robot-core",
-      "name": "Robot-Core-Embodied-AI",
-      "createdAt": "2026-09-28T07:47:34Z",
-      "url": "https://github.com/ameyasharma-ai",
-      "description": "🤖 Local-first humanoid robot brain: full-duplex speech (<200ms barge-in), 60 FPS YuNet face & YOLOv8 object perception, and WebGL2 avatar with semantic Inverse Kinematics.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
-        },
-        {
-          "name": "Three.js",
-          "iconifyClass": "logos-threejs"
-        },
-        {
-          "name": "WebRTC",
-          "iconifyClass": "logos-webrtc"
-        }
-      ]
-    },
-    {
-      "id": "proj-assistance-device",
-      "name": "Wearable-AI-Reading-Assistant",
-      "createdAt": "2026-10-19T16:26:11Z",
-      "url": "https://github.com/ameyasharma-ai",
-      "description": "👓 Wearable multimodal study solver: hands-free document analysis with live camera snapshots, foot-pedal navigation, Gemini 2.0 Flash reasoning, and TTS audio synthesis.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Kotlin",
-          "iconifyClass": "logos-kotlin-icon"
-        },
-        {
-          "name": "Android",
-          "iconifyClass": "logos-android-icon"
-        },
-        {
-          "name": "Gemini AI",
-          "iconifyClass": "logos-google-icon"
-        }
-      ]
-    },
-    {
-      "id": "proj-death-clock",
-      "name": "AI-Death-Clock-Longevity",
-      "createdAt": "2026-10-25T08:08:25Z",
-      "url": "https://github.com/ameyasharma-ai/ai-death-clock",
-      "description": "⏳ Glassmorphic desktop HUD calculating actuarial longevity and biological age metrics using structured Google Gemini Cloud API prompts and latency benchmarking.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "PyQt",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Gemini API",
-          "iconifyClass": "logos-google-icon"
-        }
-      ]
-    },
-    {
-      "id": "proj-screentime-clock",
-      "name": "Screentime-Session-Clock",
-      "createdAt": "2026-10-31T13:49:32Z",
-      "url": "https://github.com/ameyasharma-ai/screentime-clock",
-      "description": "⏱️ Ambient 24-hour analog desktop clock telemetry widget tracking active user sessions and OS idle states via low-level Windows Win32 APIs.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Win32 API",
-          "iconifyClass": "logos-microsoft-windows"
-        }
-      ]
-    },
-    {
-      "id": "proj-email-validator",
-      "name": "Telegram-CRM-Email-Validator",
-      "createdAt": "2026-05-25T17:56:28Z",
-      "url": "https://github.com/ameyasharma-ai/email_validator",
-      "description": "📬 High-throughput Telegram bot verifying emails directly via asynchronous DNS/MX lookups and simulated SMTP handshakes, syncing cleaned leads to Google Sheets CRM.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Telegram Bot",
-          "iconifyClass": "logos-telegram"
-        },
-        {
-          "name": "Google Sheets",
-          "iconifyClass": "simple-icons:googlesheets"
-        },
-        {
-          "name": "AsyncIO",
-          "iconifyClass": "logos-python"
         }
       ]
     },
     {
       "id": "proj-gmaps-scraper",
-      "name": "GMaps-Intelligence-Scraper",
-      "createdAt": "2026-06-12T10:14:02Z",
+      "name": "Google Maps & Places Lead Discovery Scraper",
+      "createdAt": "2026-05-21T08:58:01Z",
+      "firstCommit": "2026-05-21T08:59:15Z",
+      "firstCommitFormatted": "May 21, 2026 (08:59 UTC)",
       "url": "https://github.com/ameyasharma-ai/gmaps-scraper",
-      "description": "📍 Dual-mode Google Maps business scraper engineered with anti-bot fingerprint evasion, coordinate grid sweeping, and live remote Telegram control HUD.",
+      "description": "Robust geographic data extraction engine querying Google Places API with coordinate tiling, phone verification, and automated CSV/JSON serialization.",
       "isFork": false,
       "languages": [
         {
@@ -254,46 +196,70 @@
         },
         {
           "name": "Playwright",
-          "iconifyClass": "logos-playwright"
+          "iconifyClass": "simple-icons:playwright"
         },
         {
-          "name": "Telegram Bot",
-          "iconifyClass": "logos-telegram"
+          "name": "Pandas",
+          "iconifyClass": "simple-icons:pandas"
         }
       ]
     },
     {
-      "id": "proj-the-genesis",
-      "name": "The-Genesis-Personal-OS",
-      "createdAt": "2026-07-15T08:30:19Z",
-      "url": "https://github.com/ameyasharma-ai/TheGenesis",
-      "description": "🎯 Personal life operating system with modular habit tracking, deep work session telemetry, and conversational AI productivity assistance.",
+      "id": "proj-email_validator",
+      "name": "ZeroBounce & MX Real-Time Email Validator",
+      "createdAt": "2026-05-25T12:25:44Z",
+      "firstCommit": "2026-05-25T12:26:28Z",
+      "firstCommitFormatted": "May 25, 2026 (12:26 UTC)",
+      "url": "https://github.com/ameyasharma-ai/email_validator",
+      "description": "Asynchronous SMTP handshake verifier checking domain MX records, disposable email heuristics, and mailbox deliverability at line-speed.",
       "isFork": false,
       "languages": [
         {
-          "name": "TypeScript",
-          "iconifyClass": "logos-typescript-icon"
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
-          "name": "React",
-          "iconifyClass": "logos-react"
-        },
-        {
-          "name": "TailwindCSS",
-          "iconifyClass": "logos-tailwindcss-icon"
-        },
-        {
-          "name": "Gemini AI",
-          "iconifyClass": "logos-google-icon"
+          "name": "DNS",
+          "iconifyClass": "simple-icons:cloudflare"
         }
       ]
     },
     {
-      "id": "proj-web-dev-agency",
-      "name": "Web-Dev-Agency-Engine",
-      "createdAt": "2026-08-01T14:22:10Z",
+      "id": "proj-arclane-autonomous-acquisition-engine",
+      "name": "Arclane — Autonomous Client Acquisition & Deployment Engine",
+      "createdAt": "2026-05-26T16:26:58Z",
+      "firstCommit": "2026-05-26T11:14:42Z",
+      "firstCommitFormatted": "May 26, 2026 (11:14 UTC)",
+      "url": "https://github.com/ameyasharma-ai/arclane-autonomous-acquisition-engine",
+      "description": "24/7 continuous autonomous business development engine managing micro-locality hopping across Patna/Bihar, automated website deployments to Vercel, and live Telegram telemetry.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs-icon"
+        },
+        {
+          "name": "Puppeteer",
+          "iconifyClass": "logos-puppeteer"
+        },
+        {
+          "name": "Telegram API",
+          "iconifyClass": "logos-telegram"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "proj-WEB-DEV-AGENCY",
+      "name": "Arclane Web Development Production Suite",
+      "createdAt": "2026-08-13T17:46:44Z",
+      "firstCommit": "2026-08-13T17:46:49Z",
+      "firstCommitFormatted": "Aug 13, 2026 (17:46 UTC)",
       "url": "https://github.com/ameyasharma-ai/WEB-DEV-AGENCY",
-      "description": "🌐 Enterprise multi-tenant agency site builder and rapid client deployment pipeline with glassmorphism UI and fluid responsive layouts.",
+      "description": "High-conversion responsive landing page frameworks with fluid mobile navigation, dynamic SSR hydration, and Vercel edge deployment hooks.",
       "isFork": false,
       "languages": [
         {
@@ -301,21 +267,47 @@
           "iconifyClass": "logos-nextjs-icon"
         },
         {
-          "name": "React",
-          "iconifyClass": "logos-react"
-        },
-        {
           "name": "TailwindCSS",
           "iconifyClass": "logos-tailwindcss-icon"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
         }
       ]
     },
     {
-      "id": "proj-ai-backend",
-      "name": "AI-Backend-Streaming-Proxy",
-      "createdAt": "2026-08-18T11:45:00Z",
-      "url": "https://github.com/ameyasharma-ai/AI-backend",
-      "description": "⚡ High-performance asynchronous AI backend proxy supporting Server-Sent Events (SSE) streaming, dynamic multi-model failover, and request rate-limiting.",
+      "id": "proj-fish-detector",
+      "name": "Autonomous Computer Vision Fish Detector",
+      "createdAt": "2026-09-27T06:17:15Z",
+      "firstCommit": "2026-09-27T06:18:00Z",
+      "firstCommitFormatted": "Sep 27, 2026 (06:18 UTC)",
+      "url": "https://github.com/ameyasharma-ai/fish-detector",
+      "description": "YOLO-powered real-time computer vision system classifying underwater aquatic life with bounding box tracking and inference FPS acceleration.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "YOLO",
+          "iconifyClass": "simple-icons:opencv"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
+        }
+      ]
+    },
+    {
+      "id": "proj-robot",
+      "name": "Robot — Autonomous AI Voice & Hardware Engine",
+      "createdAt": "2026-09-28T07:47:34Z",
+      "firstCommit": "2026-09-29T11:10:08Z",
+      "firstCommitFormatted": "Sep 29, 2026 (11:10 UTC)",
+      "url": "https://github.com/ameyasharma-ai/robot",
+      "description": "Edge computing and multimodal AI robotics pipeline orchestrating localized sensory telemetry, speech synthesis, and dual-column inference routers.",
       "isFork": false,
       "languages": [
         {
@@ -329,6 +321,90 @@
         {
           "name": "WebSockets",
           "iconifyClass": "simple-icons:socketdotio"
+        }
+      ]
+    },
+    {
+      "id": "proj-Assistance-Device",
+      "name": "Wearable AI Reading & Multimodal Study Assistant",
+      "createdAt": "2026-10-19T16:26:11Z",
+      "firstCommit": "2026-10-19T07:47:58Z",
+      "firstCommitFormatted": "Oct 19, 2026 (07:47 UTC)",
+      "url": "https://github.com/ameyasharma-ai/Assistance-Device",
+      "description": "Hardware & software accessibility interface pairing live camera OCR vision with foot-pedal navigation and Gemini Flash-Lite reasoning for real-time study audio narration.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Kotlin",
+          "iconifyClass": "logos-kotlin"
+        },
+        {
+          "name": "Gemini API",
+          "iconifyClass": "simple-icons:google"
+        },
+        {
+          "name": "Android",
+          "iconifyClass": "logos-android-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-ai-death-clock",
+      "name": "AI Actuarial Longevity Monitor & Death Clock",
+      "createdAt": "2026-10-25T08:08:25Z",
+      "firstCommit": "2026-10-25T08:08:33Z",
+      "firstCommitFormatted": "Oct 25, 2026 (08:08 UTC)",
+      "url": "https://github.com/ameyasharma-ai/ai-death-clock",
+      "description": "Health telemetry and actuarial longevity calculator modeling lifestyle habits and statistical survival distributions using Google Gemini API reasoning.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Gemini API",
+          "iconifyClass": "simple-icons:google"
+        }
+      ]
+    },
+    {
+      "id": "proj-screentime-clock",
+      "name": "System Screentime & Digital Wellbeing Monitor",
+      "createdAt": "2026-10-31T13:49:32Z",
+      "firstCommit": "2026-10-31T13:49:20Z",
+      "firstCommitFormatted": "Oct 31, 2026 (13:49 UTC)",
+      "url": "https://github.com/ameyasharma-ai/screentime-clock",
+      "description": "Lightweight cross-platform background daemon recording active process window handles and tracking productivity metrics with sub-0.1% CPU overhead.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Windows API",
+          "iconifyClass": "logos-microsoft-windows"
+        }
+      ]
+    },
+    {
+      "id": "proj-TheGenesis",
+      "name": "TheGenesis — Autonomous Core Framework",
+      "createdAt": "2026-11-24T06:38:56Z",
+      "firstCommit": "2026-11-24T06:38:55Z",
+      "firstCommitFormatted": "Nov 24, 2026 (06:38 UTC)",
+      "url": "https://github.com/ameyasharma-ai/TheGenesis",
+      "description": "Foundational architecture and prompt engineering orchestration engine for scalable autonomous AI multi-agent workflows.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "AI Agents",
+          "iconifyClass": "simple-icons:openai"
         }
       ]
     }

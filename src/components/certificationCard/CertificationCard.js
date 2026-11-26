@@ -31,17 +31,29 @@ class CertificationCard extends Component {
                   alignItems: "center",
                   justifyContent: "center",
                   padding: "24px 0",
-                  minHeight: "90px",
+                  minHeight: "100px",
                 }}
               >
-                <i
-                  className="fas fa-certificate"
-                  style={{
-                    fontSize: "44px",
-                    color: "#ffffff",
-                    filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.25))",
-                  }}
-                ></i>
+                {certificate.iconify_tag ? (
+                  <span
+                    className="iconify"
+                    data-icon={certificate.iconify_tag}
+                    style={{
+                      fontSize: "50px",
+                      color: "#ffffff",
+                      filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.35))",
+                    }}
+                  ></span>
+                ) : (
+                  <i
+                    className="fas fa-certificate"
+                    style={{
+                      fontSize: "44px",
+                      color: "#ffffff",
+                      filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.25))",
+                    }}
+                  ></i>
+                )}
               </div>
               <div className="content-details fadeIn-top">
                 <h3 className="content-title" style={{ color: "#ffffff" }}>

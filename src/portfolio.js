@@ -7,13 +7,13 @@ const settings = {
 
 // SEO Related settings
 const seo = {
-  title: "Ameya Sharma | Portfolio",
+  title: "Ameya's Portfolio",
   description:
     "Full-Stack Software Engineer & AI Systems Developer specializing in real-time systems, scalable backend architectures, and AI-powered applications.",
   og: {
-    title: "Ameya Sharma Portfolio",
+    title: "Ameya's Portfolio",
     type: "website",
-    url: "https://kolzo.in/",
+    url: "https://ameyasharma.me/",
   },
 };
 
@@ -309,7 +309,8 @@ const certifications = {
       subtitle: "TuteDude Verified Certification",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-NX-1259",
-      color_code: "#0f172a",
+      color_code: "#000000",
+      iconify_tag: "logos:nextjs-icon",
     },
     {
       title: "Business Analytics",
@@ -317,13 +318,15 @@ const certifications = {
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-CR-1747",
       color_code: "#0284c7",
+      iconify_tag: "flat-color-icons:bullish",
     },
     {
       title: "Machine Learning (ML)",
       subtitle: "TuteDude Verified Certification",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-ML-1635",
-      color_code: "#10b981",
+      color_code: "#059669",
+      iconify_tag: "carbon:machine-learning-model",
     },
     {
       title: "Artificial Intelligence Tools",
@@ -331,20 +334,23 @@ const certifications = {
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-AIT-1054",
       color_code: "#6366f1",
+      iconify_tag: "fluent:bot-sparkle-24-filled",
     },
     {
       title: "Data Analytics",
       subtitle: "TuteDude Verified Certification",
       certificate_link:
         "https://tutedude694.s3.ap-south-1.amazonaws.com/Certificates/TD-AMEY-DA-1059.pdf",
-      color_code: "#f59e0b",
+      color_code: "#d97706",
+      iconify_tag: "carbon:analytics",
     },
     {
       title: "Microsoft PowerBI",
       subtitle: "TuteDude Verified Certification",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-PB-2118",
-      color_code: "#ec4899",
+      color_code: "#ca8a04",
+      iconify_tag: "logos:microsoft-power-bi",
     },
   ],
 };
