@@ -305,39 +305,45 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "Next.js & Modern Web Development",
+      subtitle: "TuteDude Verified Certification",
+      certificate_link:
+        "https://upskill.tutedude.com/certificate/TD-AMEY-NX-1259",
+      color_code: "#0f172a",
+    },
+    {
+      title: "Business Analytics",
+      subtitle: "TuteDude Verified Certification",
+      certificate_link:
+        "https://upskill.tutedude.com/certificate/TD-AMEY-CR-1747",
+      color_code: "#0284c7",
+    },
+    {
       title: "Machine Learning (ML)",
       subtitle: "TuteDude Verified Certification",
-      logo_path: "tutedude_ml.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-ML-1635",
-      alt_name: "TuteDude ML",
       color_code: "#10b981",
     },
     {
       title: "Artificial Intelligence Tools",
       subtitle: "TuteDude Verified Certification",
-      logo_path: "tutedude_ai.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-AIT-1054",
-      alt_name: "TuteDude AI Tools",
-      color_code: "#3b82f6",
+      color_code: "#6366f1",
     },
     {
       title: "Data Analytics",
       subtitle: "TuteDude Verified Certification",
-      logo_path: "tutedude_da.svg",
       certificate_link:
         "https://tutedude694.s3.ap-south-1.amazonaws.com/Certificates/TD-AMEY-DA-1059.pdf",
-      alt_name: "TuteDude Data Analytics",
       color_code: "#f59e0b",
     },
     {
       title: "Microsoft PowerBI",
       subtitle: "TuteDude Verified Certification",
-      logo_path: "tutedude_pb.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-PB-2118",
-      alt_name: "TuteDude PowerBI",
       color_code: "#ec4899",
     },
   ],

@@ -213,6 +213,124 @@
           "iconifyClass": "logos-microsoft-windows"
         }
       ]
+    },
+    {
+      "id": "proj-email-validator",
+      "name": "Telegram-CRM-Email-Validator",
+      "createdAt": "2026-05-25T17:56:28Z",
+      "url": "https://github.com/ameyasharma-ai/email_validator",
+      "description": "📬 High-throughput Telegram bot verifying emails directly via asynchronous DNS/MX lookups and simulated SMTP handshakes, syncing cleaned leads to Google Sheets CRM.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Telegram Bot",
+          "iconifyClass": "logos-telegram"
+        },
+        {
+          "name": "Google Sheets",
+          "iconifyClass": "simple-icons:googlesheets"
+        },
+        {
+          "name": "AsyncIO",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "proj-gmaps-scraper",
+      "name": "GMaps-Intelligence-Scraper",
+      "createdAt": "2026-06-12T10:14:02Z",
+      "url": "https://github.com/ameyasharma-ai/gmaps-scraper",
+      "description": "📍 Dual-mode Google Maps business scraper engineered with anti-bot fingerprint evasion, coordinate grid sweeping, and live remote Telegram control HUD.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Playwright",
+          "iconifyClass": "logos-playwright"
+        },
+        {
+          "name": "Telegram Bot",
+          "iconifyClass": "logos-telegram"
+        }
+      ]
+    },
+    {
+      "id": "proj-the-genesis",
+      "name": "The-Genesis-Personal-OS",
+      "createdAt": "2026-07-15T08:30:19Z",
+      "url": "https://github.com/ameyasharma-ai/TheGenesis",
+      "description": "🎯 Personal life operating system with modular habit tracking, deep work session telemetry, and conversational AI productivity assistance.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconifyClass": "logos-tailwindcss-icon"
+        },
+        {
+          "name": "Gemini AI",
+          "iconifyClass": "logos-google-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-web-dev-agency",
+      "name": "Web-Dev-Agency-Engine",
+      "createdAt": "2026-08-01T14:22:10Z",
+      "url": "https://github.com/ameyasharma-ai/WEB-DEV-AGENCY",
+      "description": "🌐 Enterprise multi-tenant agency site builder and rapid client deployment pipeline with glassmorphism UI and fluid responsive layouts.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconifyClass": "logos-tailwindcss-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-ai-backend",
+      "name": "AI-Backend-Streaming-Proxy",
+      "createdAt": "2026-08-18T11:45:00Z",
+      "url": "https://github.com/ameyasharma-ai/AI-backend",
+      "description": "⚡ High-performance asynchronous AI backend proxy supporting Server-Sent Events (SSE) streaming, dynamic multi-model failover, and request rate-limiting.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "WebSockets",
+          "iconifyClass": "simple-icons:socketdotio"
+        }
+      ]
     }
   ]
 }
