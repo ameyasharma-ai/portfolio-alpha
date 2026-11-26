@@ -13,18 +13,23 @@
 }
 
 .resume-page {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* Target the react-pdf container */
 .resume-page .react-pdf__Document {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 0;
+  width: auto;
+  margin: 0 auto;
   line-height: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .resume-page .react-pdf__Page {
@@ -109,8 +114,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Error State */

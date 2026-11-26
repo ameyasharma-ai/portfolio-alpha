@@ -6,7 +6,6 @@ import "./Resume.css";
 import myResumePdf from "../../assets/docs/Ameya_Sharma_Resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
 import TopButton from "../../components/topButton/TopButton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -36,12 +35,14 @@ export default class ResumePage extends Component {
     const width = window.innerWidth;
     let pageWidth;
 
-    if (width > 1200) {
-      pageWidth = 930;
+    if (width > 1400) {
+      pageWidth = 1020;
+    } else if (width > 1024) {
+      pageWidth = 900;
     } else if (width > 768) {
-      pageWidth = 700;
+      pageWidth = 720;
     } else {
-      pageWidth = width * 0.9;
+      pageWidth = width * 0.92;
     }
 
     this.setState({ pageWidth });
@@ -90,7 +91,7 @@ export default class ResumePage extends Component {
                 <Button
                   text="📃 Download Resume"
                   newTab={true}
-                  href={greeting.resumeLink}
+                  href={process.env.PUBLIC_URL + "/Ameya_Sharma_Resume.pdf"}
                   theme={theme}
                 />
               </div>
