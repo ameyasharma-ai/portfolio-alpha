@@ -419,7 +419,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "ameya_photo.jpg",
     description:
-      "I am actively seeking Summer/Autumn 2026 Software Engineering & AI Engineer internships. Open to discussing real-time systems, full-stack development, and technical opportunities.",
+      "I am actively seeking Winter 2026 – Summer 2027 Software Engineering & AI Engineer internships. Open to discussing real-time systems, full-stack development, and technical opportunities.",
   },
   blogSection: {
     title: "Open to Opportunities",

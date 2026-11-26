@@ -74,7 +74,7 @@ class Contact extends Component {
                     border: "1px solid #10b98144",
                   }}
                 >
-                  🟢 Available for Summer & Autumn 2026 Internships
+                  🟢 Available for Winter 2026 – Summer 2027 Internships
                 </div>
                 <h1 className="blog-heading-text" style={{ color: theme.text }}>
                   {blogSection["title"]}
