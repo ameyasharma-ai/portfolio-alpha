@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
-      "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "id": "proj-groot-os",
+      "name": "Groot-OS-Voice-AI",
+      "createdAt": "2024-06-15T12:00:00Z",
+      "url": "https://groot-frontend-orpin.vercel.app",
+      "description": "🧠 Real-time voice-reactive neural AI interface integrating Groq Whisper (v3-turbo), multi-LLM failover router, RAG memory, and streaming neural TTS with sub-1.5s latency.",
       "isFork": false,
       "languages": [
         {
@@ -13,110 +13,204 @@
           "iconifyClass": "logos-python"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
         },
         {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "WebSockets",
+          "iconifyClass": "simple-icons:socketdotio"
         }
       ]
     },
     {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "id": "proj-inline-editor",
+      "name": "InLine-CodeSync",
+      "createdAt": "2024-08-20T10:00:00Z",
+      "url": "https://inline-frontend.vercel.app",
+      "description": "⚡ Real-time collaborative web code editor (Google Docs for code) featuring multi-cursor presence, full-duplex WebSockets, CodeMirror 6, and AI Copilot.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs-icon"
+        },
+        {
+          "name": "Socket.io",
+          "iconifyClass": "simple-icons:socketdotio"
+        }
+      ]
+    },
+    {
+      "id": "proj-codegraph",
+      "name": "CodeGraph",
+      "createdAt": "2024-11-05T14:30:00Z",
+      "url": "https://codegraph-eight.vercel.app",
+      "description": "📊 Production-grade AI codebase visualizer mapping GitHub ASTs and ES module imports into interactive dependency graphs with animated path tracing and Supabase caching.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Supabase",
+          "iconifyClass": "simple-icons:supabase"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconifyClass": "logos-tailwindcss-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-robot-core",
+      "name": "Robot-Core-Embodied-AI",
+      "createdAt": "2024-10-01T08:00:00Z",
+      "url": "https://github.com/ameyasharma-ai",
+      "description": "🤖 Local-first humanoid robot brain: full-duplex speech (<200ms barge-in), 60 FPS YuNet face & YOLOv8 object perception, and WebGL2 avatar with semantic Inverse Kinematics.",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos-opencv"
+        },
+        {
+          "name": "Three.js",
+          "iconifyClass": "logos-threejs"
+        },
+        {
+          "name": "WebRTC",
+          "iconifyClass": "logos-webrtc"
         }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
+      "id": "proj-arclane-engine",
+      "name": "Arclane-Autonomous-Engine",
+      "createdAt": "2024-05-20T09:15:00Z",
+      "url": "https://github.com/ameyasharma-ai",
+      "description": "🌐 24/7 autonomous client acquisition engine: headless browser automation with anti-bot bypass, automated client site deployments to Vercel, and remote Telegram bot HUD.",
       "isFork": false,
       "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
         {
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
         },
         {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs-icon"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker-icon"
+        },
+        {
+          "name": "Playwright",
+          "iconifyClass": "logos-playwright"
         }
       ]
     },
     {
-      "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "id": "proj-assistance-device",
+      "name": "Wearable-AI-Reading-Assistant",
+      "createdAt": "2024-09-12T16:00:00Z",
+      "url": "https://github.com/ameyasharma-ai",
+      "description": "👓 Wearable multimodal study solver: hands-free document analysis with live camera snapshots, foot-pedal navigation, Gemini 2.0 Flash reasoning, and TTS audio synthesis.",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "Kotlin",
+          "iconifyClass": "logos-kotlin-icon"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Android",
+          "iconifyClass": "logos-android-icon"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Gemini AI",
+          "iconifyClass": "logos-google-icon"
         }
       ]
     },
     {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "id": "proj-fish-detector",
+      "name": "Fish-Detector-CV",
+      "createdAt": "2024-03-10T11:20:00Z",
+      "url": "https://github.com/ameyasharma-ai/fish-detector",
+      "description": "🐟 Real-time marine aquaculture computer vision pipeline: custom-trained YOLOv4 neural network for underwater fish detection, centroid tracking, and biomass analytics.",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "TensorFlow",
+          "iconifyClass": "logos-tensorflow"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos-opencv"
         }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "id": "proj-death-clock",
+      "name": "AI-Death-Clock-Longevity",
+      "createdAt": "2024-07-04T18:45:00Z",
+      "url": "https://github.com/ameyasharma-ai/ai-death-clock",
+      "description": "⏳ Glassmorphic desktop HUD calculating actuarial longevity and biological age metrics using structured Google Gemini Cloud API prompts and latency benchmarking.",
       "isFork": false,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "PyQt",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Gemini API",
+          "iconifyClass": "logos-google-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-screentime-clock",
+      "name": "Screentime-Session-Clock",
+      "createdAt": "2024-04-18T13:10:00Z",
+      "url": "https://github.com/ameyasharma-ai/screentime-clock",
+      "description": "⏱️ Ambient 24-hour analog desktop clock telemetry widget tracking active user sessions and OS idle states via low-level Windows Win32 APIs.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Win32 API",
+          "iconifyClass": "logos-microsoft-windows"
         }
       ]
     }
