@@ -27,7 +27,15 @@ class Contact extends Component {
               <div className="contact-heading-img-div">
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
+                  alt="Ameya Sharma"
+                  style={{
+                    width: "260px",
+                    height: "260px",
+                    borderRadius: "50%",
+                    objectFit: "cover",
+                    border: `4px solid ${theme.text}`,
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.25)",
+                  }}
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -45,11 +53,7 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Button
-                    text="See My Resume"
-                    href="/resume"
-                    theme={theme}
-                  />
+                  <Button text="See My Resume" href="/resume" theme={theme} />
                 </div>
               </div>
             </div>
@@ -57,6 +61,21 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="blog-heading-div">
               <div className="blog-heading-text-div">
+                <div
+                  style={{
+                    display: "inline-block",
+                    padding: "6px 14px",
+                    borderRadius: "20px",
+                    backgroundColor: "#10b98122",
+                    color: "#10b981",
+                    fontWeight: "700",
+                    fontSize: "14px",
+                    marginBottom: "12px",
+                    border: "1px solid #10b98144",
+                  }}
+                >
+                  🟢 Available for Summer & Autumn 2026 Internships
+                </div>
                 <h1 className="blog-heading-text" style={{ color: theme.text }}>
                   {blogSection["title"]}
                 </h1>
@@ -68,18 +87,14 @@ class Contact extends Component {
                 </p>
                 <div className="blogsite-btn-div">
                   <Button
-                    text="Visit My Blogsite"
-                    newTab={true}
+                    text="Send Direct Email"
+                    newTab={false}
                     href={blogSection.link}
                     theme={theme}
                   />
                 </div>
               </div>
               <div className="blog-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${blogSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <BlogsImg theme={theme} />
               </div>
             </div>

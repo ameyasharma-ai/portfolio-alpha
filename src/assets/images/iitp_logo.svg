@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="iitpGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </radialGradient>
+  </defs>
+  <circle cx="150" cy="150" r="140" fill="#0c4a6e" stroke="#38bdf8" stroke-width="8"/>
+  <circle cx="150" cy="150" r="118" fill="url(#iitpGrad)"/>
+  
+  <path id="iitpTop" fill="none" d="M 35 150 A 115 115 0 0 1 265 150" />
+  <text font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    <textPath href="#iitpTop" startOffset="50%">IIT PATNA • ESTD 2008</textPath>
+  </text>
+  
+  <path id="iitpBottom" fill="none" d="M 45 150 A 105 105 0 0 0 255 150" />
+  <text font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e0f2fe" text-anchor="middle">
+    <textPath href="#iitpBottom" startOffset="50%">INDIAN INSTITUTE OF TECHNOLOGY</textPath>
+  </text>
+
+  <!-- Center Symbol -->
+  <g transform="translate(150, 150)">
+    <circle r="46" fill="#082f49" stroke="#38bdf8" stroke-width="3"/>
+    <text x="0" y="8" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">IITP</text>
+    <circle cx="0" cy="-24" r="5" fill="#38bdf8"/>
+    <path d="M-20,20 L20,20" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

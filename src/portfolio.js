@@ -2,12 +2,12 @@
 
 // Website related settings
 const settings = {
-  isSplash: false, // Clean direct load
+  isSplash: false,
 };
 
 // SEO Related settings
 const seo = {
-  title: "Ameya Sharma's Portfolio",
+  title: "Ameya Sharma | Portfolio",
   description:
     "Full-Stack Software Engineer & AI Systems Developer specializing in real-time systems, scalable backend architectures, and AI-powered applications.",
   og: {
@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Full-Stack Software Engineer & AI Systems Developer building low-latency distributed systems, real-time voice AI, and scalable web platforms.",
   resumeLink: "Ameya_Sharma_Resume.pdf",
-  portfolio_repository: "https://github.com/ameyasharma-ai",
+  portfolio_repository: "https://github.com/ameyasharma-ai/portfolio-alpha",
   githubProfile: "https://github.com/ameyasharma-ai",
 };
 
@@ -255,8 +255,8 @@ const degrees = {
     {
       title: "National Institute of Technology Patna (NIT Patna)",
       subtitle: "B.Tech. in Mechanical Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "NIT Patna",
+      logo_path: "nitp_logo.svg",
+      alt_name: "NIT Patna Logo",
       duration: "2023 - 2028 (Ongoing)",
       descriptions: [
         "⚡ Current Cumulative Grade Point Average (CGPA): 8.5 / 10.0.",
@@ -268,34 +268,34 @@ const degrees = {
     {
       title: "Indian Institute of Technology Patna (IIT Patna)",
       subtitle: "B.Tech. in Electrical Engineering (Dropped)",
-      logo_path: "iu_logo.png",
-      alt_name: "IIT Patna",
+      logo_path: "iitp_logo.svg",
+      alt_name: "IIT Patna Logo",
       duration: "2024 - 2025",
       descriptions: [
         "⚡ Cumulative Grade Point Average (CGPA): 8.0 / 10.0.",
-        "⚡ Studied electrical systems, foundational circuit theory, and computational logic before choosing to focus on software engineering.",
+        "⚡ Studied electrical systems, foundational circuit theory, and computational logic before transitioning focus to software engineering.",
       ],
       website_link: "https://www.iitp.ac.in",
     },
     {
       title: "New Era Public School, Munger",
       subtitle: "Class XII (Senior Secondary - Science Stream)",
-      logo_path: "google_logo.png",
-      alt_name: "New Era Public School",
+      logo_path: "new_era_logo.svg",
+      alt_name: "New Era Public School Logo",
       duration: "2021 - 2023",
       descriptions: [
-        "⚡ Passed with 78.0% in Senior Secondary Board Examination (Physics, Chemistry, Mathematics).",
+        "⚡ Scored 78.0% in Senior Secondary Board Examination (Physics, Chemistry, Mathematics).",
       ],
       website_link: "https://google.com",
     },
     {
       title: "Notre Dame Academy, Munger",
       subtitle: "Class X (Secondary School)",
-      logo_path: "stanford_logo.png",
-      alt_name: "Notre Dame Academy",
+      logo_path: "notre_dame_logo.svg",
+      alt_name: "Notre Dame Academy Logo",
       duration: "2008 - 2021",
       descriptions: [
-        "⚡ Passed with 93.4% distinction in Class X Board Examination.",
+        "⚡ Graduated with 93.4% distinction in Class X Board Examination.",
       ],
       website_link: "https://google.com",
     },
@@ -306,39 +306,39 @@ const certifications = {
   certifications: [
     {
       title: "Machine Learning (ML)",
-      subtitle: "- TuteDude Certified",
-      logo_path: "deeplearning_ai_logo.png",
+      subtitle: "TuteDude Verified Certification",
+      logo_path: "tutedude_ml.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-ML-1635",
       alt_name: "TuteDude ML",
-      color_code: "#00000099",
+      color_code: "#10b981",
     },
     {
-      title: "Artificial Intelligence Tools (AI Tools)",
-      subtitle: "- TuteDude Certified",
-      logo_path: "google_logo.png",
+      title: "Artificial Intelligence Tools",
+      subtitle: "TuteDude Verified Certification",
+      logo_path: "tutedude_ai.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-AIT-1054",
       alt_name: "TuteDude AI Tools",
-      color_code: "#0C9D5899",
+      color_code: "#3b82f6",
     },
     {
       title: "Data Analytics",
-      subtitle: "- TuteDude Certified",
-      logo_path: "ibm_logo.png",
+      subtitle: "TuteDude Verified Certification",
+      logo_path: "tutedude_da.svg",
       certificate_link:
         "https://tutedude694.s3.ap-south-1.amazonaws.com/Certificates/TD-AMEY-DA-1059.pdf",
       alt_name: "TuteDude Data Analytics",
-      color_code: "#1F70C199",
+      color_code: "#f59e0b",
     },
     {
       title: "Microsoft PowerBI",
-      subtitle: "- TuteDude Certified",
-      logo_path: "microsoft_logo.png",
+      subtitle: "TuteDude Verified Certification",
+      logo_path: "tutedude_pb.svg",
       certificate_link:
         "https://upskill.tutedude.com/certificate/TD-AMEY-PB-2118",
       alt_name: "TuteDude PowerBI",
-      color_code: "#D83B0199",
+      color_code: "#ec4899",
     },
   ],
 };
@@ -348,7 +348,7 @@ const experience = {
   title: "Experience",
   subtitle: "Internships & Technical Leadership",
   description:
-    "I have built low-latency real-time voice streaming architectures, collaborative development tools, and scalable cloud microservices. Active contributor to campus developer ecosystems.",
+    "Hands-on experience developing real-time voice streaming architectures, collaborative development tools, and full-stack software applications.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -363,7 +363,7 @@ const experience = {
           duration: "Apr 2025 - Jun 2025",
           location: "Patna, Bihar, India",
           description:
-            "Engineered full-stack production features for client enterprise portals using React.js and Node.js. Optimized backend API endpoints and server-side caching, boosting throughput by 22% and improving system uptime.",
+            "Engineered full-stack features for client enterprise portals using React.js and Node.js. Optimized backend API endpoints and caching, improving responsiveness and system stability.",
           color: "#0879bf",
         },
         {
@@ -374,7 +374,7 @@ const experience = {
           duration: "Jan 2026 - Present",
           location: "NIT Patna, Bihar, India",
           description:
-            "Architected internal web platform modules for workflow automation and team telemetry, eliminating 35% of manual operational tasks. Reduced API latency by 28% through database query optimization.",
+            "Built internal platform features for workflow automation and team management. Reduced API latency through database query optimization and clean API routing.",
           color: "#0C9D58",
         },
       ],
@@ -386,62 +386,38 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "A showcase of production-grade systems across real-time voice AI, collaborative web applications, and developer tooling. All repositories sanitized for clean security and production standards.",
+    "Real-world systems across real-time voice AI, collaborative web applications, and developer tooling. Built with modern stacks and sanitized production standards.",
   avatar_image_path: "projects_image.svg",
 };
 
+// Publications section cleanly disabled (avoids misleading pseudo-publications)
 const publicationsHeader = {
-  title: "Featured Case Studies",
-  description: "Architectural breakdowns of flagship production systems.",
+  title: "",
+  description: "",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
-  data: [
-    {
-      id: "groot-voice-ai-case-study",
-      name: "Groot OS: Sub-1.5s Voice-Reactive AI Streaming",
-      createdAt: "2024-06-15T00:00:00Z",
-      description:
-        "Full-duplex WebSocket architecture with dynamic multi-LLM failover routing and neural TTS.",
-      url: "https://groot-frontend-orpin.vercel.app",
-    },
-    {
-      id: "codegraph-case-study",
-      name: "CodeGraph: AST Import Dependency Mapping",
-      createdAt: "2024-11-05T00:00:00Z",
-      description:
-        "Static code analysis converting GitHub trees into interactive DAGs with Supabase caching.",
-      url: "https://codegraph-eight.vercel.app",
-    },
-    {
-      id: "inline-codesync-case-study",
-      name: "InLine: Full-Duplex Real-Time Collaborative Editor",
-      createdAt: "2024-08-20T00:00:00Z",
-      description:
-        "Google Docs-style concurrent coding workspace with multi-cursor tracking and CodeMirror 6.",
-      url: "https://inline-frontend.vercel.app",
-    },
-  ],
+  data: [],
 };
 
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "ameya_photo.jpg",
     description:
-      "I am actively seeking Summer/Autumn 2026 Software Engineering & AI Engineer internships. I am always open to discussing low-latency systems, full-stack architectures, or collaborative opportunities.",
+      "I am actively seeking Summer/Autumn 2026 Software Engineering & AI Engineer internships. Open to discussing real-time systems, full-stack development, and technical opportunities.",
   },
   blogSection: {
-    title: "Portfolio Hub",
+    title: "Open to Opportunities",
     subtitle:
-      "Check out live interactive deployments and architectural showcases.",
-    link: "https://kolzo.in",
-    avatar_image_path: "blogs_image.svg",
+      "Fast 24-hour response turnaround. Feel free to shoot me an email, ping me on X, or review my code on GitHub.",
+    link: "mailto:sharmaameya999@gmail.com",
+    avatar_image_path: "developerActivity.svg",
   },
   addressSection: {
-    title: "Campus Address",
+    title: "Campus Location",
     subtitle:
       "National Institute of Technology Patna (NIT Patna), Ashok Rajpath, Mahendru, Patna, Bihar, India 800005",
     locality: "Patna",
@@ -454,7 +430,7 @@ const contactPageData = {
       "https://www.google.com/maps/search/?api=1&query=National+Institute+of+Technology+Patna",
   },
   phoneSection: {
-    title: "Phone",
+    title: "Direct Mobile",
     subtitle: "+91 9097999898",
   },
 };

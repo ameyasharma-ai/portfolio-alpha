@@ -5,8 +5,8 @@
   <title>Ameya Sharma - Resume</title>
   <style>
     @page {
-      size: A4;
-      margin: 10mm 14mm 10mm 14mm;
+      size: A4 portrait;
+      margin: 8mm 12mm 8mm 12mm;
     }
     * {
       box-sizing: border-box;
@@ -15,79 +15,80 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #111827;
+      color: #1f2937;
       background: #ffffff;
-      line-height: 1.35;
-      font-size: 9.5pt;
+      line-height: 1.3;
+      font-size: 9pt;
+      max-height: 278mm;
+      overflow: hidden;
     }
     .header {
       text-align: center;
-      margin-bottom: 8px;
-      border-bottom: 1.5px solid #1f2937;
-      padding-bottom: 6px;
+      margin-bottom: 6px;
+      border-bottom: 1.5px solid #334155;
+      padding-bottom: 4px;
     }
     .header h1 {
-      font-size: 20pt;
+      font-size: 18pt;
       font-weight: 700;
-      letter-spacing: -0.5px;
       color: #0f172a;
-      text-transform: uppercase;
-      margin-bottom: 3px;
+      letter-spacing: -0.3px;
+      margin-bottom: 2px;
     }
     .contact-info {
-      font-size: 9pt;
-      color: #374151;
+      font-size: 8.5pt;
+      color: #475569;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 6px 12px;
+      gap: 4px 10px;
     }
     .contact-info a {
-      color: #1e40af;
+      color: #1d4ed8;
       text-decoration: none;
-      font-weight: 500;
     }
     .section-title {
-      font-size: 10pt;
+      font-size: 9.5pt;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
       color: #0f172a;
-      border-bottom: 1px solid #94a3b8;
-      margin-top: 8px;
-      margin-bottom: 4px;
-      padding-bottom: 2px;
+      border-bottom: 1px solid #cbd5e1;
+      margin-top: 6px;
+      margin-bottom: 3px;
+      padding-bottom: 1px;
     }
     .summary-text {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #334155;
       text-align: justify;
+      line-height: 1.3;
     }
     .skills-table {
       width: 100%;
-      font-size: 9pt;
+      font-size: 8.5pt;
       border-collapse: collapse;
     }
     .skills-table td {
-      padding: 1.5px 0;
+      padding: 1px 0;
       vertical-align: top;
     }
     .skills-label {
       font-weight: 600;
-      width: 105px;
+      width: 95px;
       color: #1e293b;
     }
     .skills-val {
       color: #334155;
     }
     .item {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
     .item-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-size: 9.5pt;
+      font-size: 9pt;
     }
     .item-title {
       font-weight: 700;
@@ -96,40 +97,36 @@
     .item-subtitle {
       font-style: italic;
       color: #334155;
-      font-size: 9pt;
+      font-size: 8.5pt;
     }
     .item-right {
-      font-size: 8.5pt;
-      color: #475569;
-      font-weight: 500;
+      font-size: 8pt;
+      color: #64748b;
       white-space: nowrap;
     }
     .bullets {
       list-style-type: disc;
-      padding-left: 16px;
-      margin-top: 2px;
+      padding-left: 15px;
+      margin-top: 1.5px;
     }
     .bullets li {
-      margin-bottom: 1.5px;
-      color: #1e293b;
-      font-size: 9pt;
-    }
-    .bullets li strong {
-      color: #0f172a;
+      margin-bottom: 1px;
+      color: #334155;
+      font-size: 8.5pt;
     }
     .cert-grid {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 3px 10px;
-      font-size: 8.5pt;
+      gap: 2px 8px;
+      font-size: 8pt;
       color: #334155;
     }
     .cert-item {
       flex: 1 1 45%;
     }
     .cert-item a {
-      color: #1e40af;
+      color: #1d4ed8;
       text-decoration: none;
     }
   </style>
@@ -139,7 +136,7 @@
   <header class="header">
     <h1>Ameya Sharma</h1>
     <div class="contact-info">
-      <span>Patna, Bihar, India (NIT Patna)</span>
+      <span>Patna, Bihar (NIT Patna)</span>
       <span>•</span>
       <span>+91 9097999898</span>
       <span>•</span>
@@ -154,9 +151,9 @@
   </header>
 
   <section>
-    <div class="section-title">Professional Summary</div>
+    <div class="section-title">Summary</div>
     <p class="summary-text">
-      High-performing Full-Stack & AI Systems Developer with proven expertise in architecting low-latency real-time voice pipelines, collaborative systems, and scalable backend infrastructure. Strong theoretical and practical foundation in distributed systems, asynchronous networking, and stateful synchronization. Actively seeking Summer/Autumn 2026 Software Engineering & AI Engineer internships.
+      Undergraduate student at NIT Patna with hands-on experience building full-stack web applications, real-time voice streaming systems, and developer tooling. Proficient in TypeScript, React, Python, and Node.js. Seeking a Software Engineering Internship for Summer/Autumn 2026.
     </p>
   </section>
 
@@ -165,27 +162,23 @@
     <table class="skills-table">
       <tr>
         <td class="skills-label">Languages:</td>
-        <td class="skills-val">JavaScript (ES6+), TypeScript, Python 3, SQL, C++, Kotlin, HTML5/CSS3</td>
+        <td class="skills-val">JavaScript (ES6+), TypeScript, Python 3, SQL, C++, Kotlin, HTML/CSS</td>
       </tr>
       <tr>
         <td class="skills-label">Frontend:</td>
-        <td class="skills-val">React.js, Next.js (App Router), Vite, TailwindCSS, React Flow, CodeMirror 6, WebSockets</td>
+        <td class="skills-val">React.js, Next.js (App Router), Vite, TailwindCSS, React Flow, CodeMirror</td>
       </tr>
       <tr>
         <td class="skills-label">Backend:</td>
-        <td class="skills-val">Node.js, Express.js, FastAPI, Uvicorn, REST APIs, Socket.io, Asynchronous Concurrency</td>
+        <td class="skills-val">Node.js, Express.js, FastAPI, RESTful APIs, WebSockets, Socket.io</td>
       </tr>
       <tr>
         <td class="skills-label">AI & Vision:</td>
-        <td class="skills-val">LLM Orchestration, RAG, OpenRouter, Groq Whisper STT, Edge-TTS, OpenCV, YOLOv4/YOLOv8, Silero VAD</td>
+        <td class="skills-val">Groq Whisper API, OpenRouter LLMs, Edge-TTS, OpenCV, YOLOv4/v8, Basic RAG</td>
       </tr>
       <tr>
-        <td class="skills-label">Data & Cloud:</td>
-        <td class="skills-val">PostgreSQL, Supabase, SQLite, Redis, Docker, Git, Linux/Bash, Vercel</td>
-      </tr>
-      <tr>
-        <td class="skills-label">Core CS:</td>
-        <td class="skills-val">Data Structures & Algorithms, System Design, Object-Oriented Programming (OOP), DBMS</td>
+        <td class="skills-label">Databases & Tools:</td>
+        <td class="skills-val">PostgreSQL, Supabase, SQLite, Docker, Git, Linux, Vercel</td>
       </tr>
     </table>
   </section>
@@ -198,7 +191,7 @@
           <span class="item-title">National Institute of Technology Patna (NIT Patna)</span>
           <span class="item-subtitle"> — B.Tech in Mechanical Engineering</span>
         </div>
-        <span class="item-right">2023 – 2028 (Ongoing) | CGPA: 8.5/10.0</span>
+        <span class="item-right">2023 – 2028 | CGPA: 8.5/10.0</span>
       </div>
     </div>
     <div class="item">
@@ -214,7 +207,7 @@
       <div class="item-header">
         <div>
           <span class="item-title">New Era Public School, Munger</span>
-          <span class="item-subtitle"> — Class XII (Senior Secondary)</span>
+          <span class="item-subtitle"> — Class XII (Science Stream)</span>
         </div>
         <span class="item-right">2021 – 2023 | 78.0%</span>
       </div>
@@ -223,7 +216,7 @@
       <div class="item-header">
         <div>
           <span class="item-title">Notre Dame Academy, Munger</span>
-          <span class="item-subtitle"> — Class X (Secondary)</span>
+          <span class="item-subtitle"> — Class X</span>
         </div>
         <span class="item-right">2008 – 2021 | 93.4%</span>
       </div>
@@ -231,7 +224,7 @@
   </section>
 
   <section>
-    <div class="section-title">Work Experience</div>
+    <div class="section-title">Experience</div>
     <div class="item">
       <div class="item-header">
         <div>
@@ -241,9 +234,9 @@
         <span class="item-right">Jan 2026 – Present</span>
       </div>
       <ul class="bullets">
-        <li>Architected and shipped internal web platform modules for workflow automation and team telemetry, eliminating <strong>35% of manual operational tasks</strong>.</li>
-        <li>Refactored backend service endpoints and database query pipelines, reducing peak API response latency by <strong>28%</strong>.</li>
-        <li>Collaborated within a fast-paced sprint environment to design scalable frontend UI components and robust error-handling layers.</li>
+        <li>Contributed to internal web platform features for student registration and event workflow coordination.</li>
+        <li>Refactored backend endpoints and optimized database queries to improve API response times.</li>
+        <li>Worked with peers in an agile development workflow to test and deploy web components.</li>
       </ul>
     </div>
     <div class="item">
@@ -255,28 +248,28 @@
         <span class="item-right">Apr 2025 – Jun 2025</span>
       </div>
       <ul class="bullets">
-        <li>Engineered and deployed responsive full-stack features across enterprise web portals using React.js and Node.js microservices.</li>
-        <li>Optimized server-side request pipelines and caching strategies, increasing request throughput by <strong>22%</strong> and enhancing system uptime.</li>
-        <li>Implemented strict input sanitization, automated schema validations, and clean RESTful design patterns to eliminate runtime failures.</li>
+        <li>Developed client-facing web pages and integrated backend REST endpoints using React and Node.js.</li>
+        <li>Assisted in debugging API performance bottlenecks and improved data caching stability.</li>
+        <li>Wrote reusable UI components and verified responsive design across mobile and desktop devices.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <div class="section-title">Selected Projects</div>
+    <div class="section-title">Projects</div>
     
     <div class="item">
       <div class="item-header">
         <div>
-          <span class="item-title">Groot OS — Real-Time Voice-Reactive Neural AI Assistant</span>
-          <span class="item-subtitle"> | Python, FastAPI, Groq Whisper, OpenRouter, Edge-TTS, WebSockets</span>
+          <span class="item-title">Groot OS — Voice-Reactive AI Interface</span>
+          <span class="item-subtitle"> | Python, FastAPI, Groq Whisper, OpenRouter, WebSockets</span>
         </div>
         <span class="item-right"><a href="https://groot-frontend-orpin.vercel.app">Live Demo</a></span>
       </div>
       <ul class="bullets">
-        <li>Engineered a full-duplex speech-to-speech AI streaming server achieving <strong>sub-1.5s turnaround latency</strong> from voice input to audio reply.</li>
-        <li>Designed a resilient multi-LLM failover router across 10+ models to eliminate rate-limit drops and maintain 99.9% availability.</li>
-        <li>Implemented streaming sentence TTS chunking with instant user barge-in cancellation and hybrid RAG memory (local vector knowledge base + Wikipedia).</li>
+        <li>Built a speech-to-speech voice interface streaming audio via WebSockets to Groq Whisper and neural TTS.</li>
+        <li>Configured multi-model fallback logic across OpenRouter providers to handle API rate limits reliably.</li>
+        <li>Implemented streaming sentence audio chunking with client-side audio barge-in interruption.</li>
       </ul>
     </div>
 
@@ -284,29 +277,29 @@
       <div class="item-header">
         <div>
           <span class="item-title">InLine — Real-Time Collaborative Web Code Editor</span>
-          <span class="item-subtitle"> | TypeScript, React, Vite, Node.js, Express, Socket.io, CodeMirror 6</span>
+          <span class="item-subtitle"> | TypeScript, React, Node.js, Express, Socket.io</span>
         </div>
         <span class="item-right"><a href="https://inline-frontend.vercel.app">Live Demo</a></span>
       </div>
       <ul class="bullets">
-        <li>Built a Google Docs-style real-time collaborative coding workspace supporting concurrent multi-user cursor tracking and state sync.</li>
-        <li>Designed an event-driven message broker handling concurrent editor rooms with sub-50ms operational state broadcasting.</li>
-        <li>Integrated AI Copilot for inline contextual code completions and built multi-language sandboxed code execution (JS, Python, C++, Java).</li>
+        <li>Developed a browser-based collaborative code editor supporting multi-user cursor tracking and room sync.</li>
+        <li>Used Socket.io room events to broadcast real-time edits between connected peers with low latency.</li>
+        <li>Integrated CodeMirror syntax highlighting and basic AI assistance for code completions.</li>
       </ul>
     </div>
 
     <div class="item">
       <div class="item-header">
         <div>
-          <span class="item-title">CodeGraph — AI-Powered Interactive Codebase Architecture Visualizer</span>
-          <span class="item-subtitle"> | Next.js 15, TypeScript, React Flow, Supabase, TailwindCSS</span>
+          <span class="item-title">CodeGraph — Interactive Codebase Visualizer</span>
+          <span class="item-subtitle"> | Next.js 15, TypeScript, React Flow, Supabase</span>
         </div>
         <span class="item-right"><a href="https://codegraph-eight.vercel.app">Live Demo</a></span>
       </div>
       <ul class="bullets">
-        <li>Engineered a recursive parsing engine using GitHub API to extract ES module imports and map entire codebases into directed DAGs.</li>
-        <li>Rendered high-performance interactive dependency graphs handling <strong>200+ nodes</strong> with smooth zoom, pan, and animated path tracing.</li>
-        <li>Integrated OpenRouter LLM architectural summaries with a Supabase PostgreSQL caching layer, slashing re-analysis latency from ~10s to <strong>sub-second</strong>.</li>
+        <li>Built a tool that parses GitHub repository files and ES import statements into interactive dependency graphs.</li>
+        <li>Rendered nodes using React Flow with zoom, pan, and animated path tracing for selected files.</li>
+        <li>Cached parsed repository dependency structures in Supabase (PostgreSQL) for faster repeat viewing.</li>
       </ul>
     </div>
   </section>

@@ -3,7 +3,7 @@
     {
       "id": "proj-groot-os",
       "name": "Groot-OS-Voice-AI",
-      "createdAt": "2024-06-15T12:00:00Z",
+      "createdAt": "2026-04-26T16:35:04Z",
       "url": "https://groot-frontend-orpin.vercel.app",
       "description": "🧠 Real-time voice-reactive neural AI interface integrating Groq Whisper (v3-turbo), multi-LLM failover router, RAG memory, and streaming neural TTS with sub-1.5s latency.",
       "isFork": false,
@@ -29,7 +29,7 @@
     {
       "id": "proj-inline-editor",
       "name": "InLine-CodeSync",
-      "createdAt": "2024-08-20T10:00:00Z",
+      "createdAt": "2026-04-28T09:27:53Z",
       "url": "https://inline-frontend.vercel.app",
       "description": "⚡ Real-time collaborative web code editor (Google Docs for code) featuring multi-cursor presence, full-duplex WebSockets, CodeMirror 6, and AI Copilot.",
       "isFork": false,
@@ -55,7 +55,7 @@
     {
       "id": "proj-codegraph",
       "name": "CodeGraph",
-      "createdAt": "2024-11-05T14:30:00Z",
+      "createdAt": "2026-04-30T12:57:05Z",
       "url": "https://codegraph-eight.vercel.app",
       "description": "📊 Production-grade AI codebase visualizer mapping GitHub ASTs and ES module imports into interactive dependency graphs with animated path tracing and Supabase caching.",
       "isFork": false,
@@ -79,35 +79,9 @@
       ]
     },
     {
-      "id": "proj-robot-core",
-      "name": "Robot-Core-Embodied-AI",
-      "createdAt": "2024-10-01T08:00:00Z",
-      "url": "https://github.com/ameyasharma-ai",
-      "description": "🤖 Local-first humanoid robot brain: full-duplex speech (<200ms barge-in), 60 FPS YuNet face & YOLOv8 object perception, and WebGL2 avatar with semantic Inverse Kinematics.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
-        },
-        {
-          "name": "Three.js",
-          "iconifyClass": "logos-threejs"
-        },
-        {
-          "name": "WebRTC",
-          "iconifyClass": "logos-webrtc"
-        }
-      ]
-    },
-    {
       "id": "proj-arclane-engine",
       "name": "Arclane-Autonomous-Engine",
-      "createdAt": "2024-05-20T09:15:00Z",
+      "createdAt": "2026-05-26T16:26:58Z",
       "url": "https://github.com/ameyasharma-ai",
       "description": "🌐 24/7 autonomous client acquisition engine: headless browser automation with anti-bot bypass, automated client site deployments to Vercel, and remote Telegram bot HUD.",
       "isFork": false,
@@ -131,31 +105,9 @@
       ]
     },
     {
-      "id": "proj-assistance-device",
-      "name": "Wearable-AI-Reading-Assistant",
-      "createdAt": "2024-09-12T16:00:00Z",
-      "url": "https://github.com/ameyasharma-ai",
-      "description": "👓 Wearable multimodal study solver: hands-free document analysis with live camera snapshots, foot-pedal navigation, Gemini 2.0 Flash reasoning, and TTS audio synthesis.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Kotlin",
-          "iconifyClass": "logos-kotlin-icon"
-        },
-        {
-          "name": "Android",
-          "iconifyClass": "logos-android-icon"
-        },
-        {
-          "name": "Gemini AI",
-          "iconifyClass": "logos-google-icon"
-        }
-      ]
-    },
-    {
       "id": "proj-fish-detector",
       "name": "Fish-Detector-CV",
-      "createdAt": "2024-03-10T11:20:00Z",
+      "createdAt": "2026-09-27T06:17:15Z",
       "url": "https://github.com/ameyasharma-ai/fish-detector",
       "description": "🐟 Real-time marine aquaculture computer vision pipeline: custom-trained YOLOv4 neural network for underwater fish detection, centroid tracking, and biomass analytics.",
       "isFork": false,
@@ -175,9 +127,57 @@
       ]
     },
     {
+      "id": "proj-robot-core",
+      "name": "Robot-Core-Embodied-AI",
+      "createdAt": "2026-09-28T07:47:34Z",
+      "url": "https://github.com/ameyasharma-ai",
+      "description": "🤖 Local-first humanoid robot brain: full-duplex speech (<200ms barge-in), 60 FPS YuNet face & YOLOv8 object perception, and WebGL2 avatar with semantic Inverse Kinematics.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos-opencv"
+        },
+        {
+          "name": "Three.js",
+          "iconifyClass": "logos-threejs"
+        },
+        {
+          "name": "WebRTC",
+          "iconifyClass": "logos-webrtc"
+        }
+      ]
+    },
+    {
+      "id": "proj-assistance-device",
+      "name": "Wearable-AI-Reading-Assistant",
+      "createdAt": "2026-10-19T16:26:11Z",
+      "url": "https://github.com/ameyasharma-ai",
+      "description": "👓 Wearable multimodal study solver: hands-free document analysis with live camera snapshots, foot-pedal navigation, Gemini 2.0 Flash reasoning, and TTS audio synthesis.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Kotlin",
+          "iconifyClass": "logos-kotlin-icon"
+        },
+        {
+          "name": "Android",
+          "iconifyClass": "logos-android-icon"
+        },
+        {
+          "name": "Gemini AI",
+          "iconifyClass": "logos-google-icon"
+        }
+      ]
+    },
+    {
       "id": "proj-death-clock",
       "name": "AI-Death-Clock-Longevity",
-      "createdAt": "2024-07-04T18:45:00Z",
+      "createdAt": "2026-10-25T08:08:25Z",
       "url": "https://github.com/ameyasharma-ai/ai-death-clock",
       "description": "⏳ Glassmorphic desktop HUD calculating actuarial longevity and biological age metrics using structured Google Gemini Cloud API prompts and latency benchmarking.",
       "isFork": false,
@@ -199,7 +199,7 @@
     {
       "id": "proj-screentime-clock",
       "name": "Screentime-Session-Clock",
-      "createdAt": "2024-04-18T13:10:00Z",
+      "createdAt": "2026-10-31T13:49:32Z",
       "url": "https://github.com/ameyasharma-ai/screentime-clock",
       "description": "⏱️ Ambient 24-hour analog desktop clock telemetry widget tracking active user sessions and OS idle states via low-level Windows Win32 APIs.",
       "isFork": false,

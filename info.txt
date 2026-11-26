@@ -11,6 +11,7 @@ Website: https://kolzo.in
 GitHub: https://github.com/ameyasharma-ai
 X (Twitter): https://x.com/ameyasharma999
 Instagram: https://instagram.com/ameyasharma999
+Profile Photo: C:\Users\Ameya Sharma\Downloads\PORTFOLIO-ALPHA\masterPortfolio\src\assets\images\ameya_photo.jpg (from ameyasharma.me)
 
 Location & Institutional Address:
 National Institute of Technology Patna (NIT Patna),
@@ -19,197 +20,134 @@ Google Maps: https://www.google.com/maps/search/?api=1&query=National+Institute+
 
 
 ================================================================================
-[1] GITHUB PROJECTS (SANITIZED FOR PRODUCTION & SAFETY)
+[1] GITHUB PROJECTS (WITH ACCURATE REPOSITORY TIMESTAMPS)
 ================================================================================
-*Note on Sanitization: All API keys, cloud secrets, tokens, and sensitive infrastructure configurations have been isolated and sanitized. Projects below are configured safely for public portfolio presentation.*
-
 1. GROOT OS — Real-Time Voice-Reactive Neural AI Assistant
-   - Category: Multimodal AI & Real-Time Audio Streaming
+   - Created: 2026-04-26T16:35:04Z
    - Tech Stack: Python (FastAPI), Groq Whisper (whisper-large-v3-turbo), OpenRouter LLMs, Edge-TTS, Scikit-learn (TF-IDF + Cosine Similarity RAG), WebSockets, React/Vite
-   - Highlights:
-     * Full-duplex speech-to-speech interaction pipeline with sub-1.5s total turnaround latency.
-     * Dynamic multi-LLM failover routing across 10+ models to prevent rate-limit degradation.
-     * Real-time streaming neural speech synthesis with instant barge-in user interruption.
-     * Integrated hybrid semantic memory (local vector knowledge base + live Wikipedia search).
+   - Highlights: Sub-1.5s speech-to-speech interaction pipeline with multi-LLM failover router across 10+ models and low-latency audio streaming with barge-in interruption.
    - Live URL: https://groot-frontend-orpin.vercel.app
-   - GitHub Repos:
-     * Frontend: https://github.com/ameyasharma-ai/groot-frontend
-     * Backend: https://github.com/ameyasharma-ai/groot-backend
+   - Repos: https://github.com/ameyasharma-ai/groot-frontend | https://github.com/ameyasharma-ai/groot-backend
 
 2. INLINE (CODESYNC) — Real-Time Collaborative Web Code Editor
-   - Category: Real-Time Systems & Web Applications
+   - Created: 2026-04-28T09:27:53Z
    - Tech Stack: TypeScript, React, Vite, Node.js, Express, Socket.io, CodeMirror 6, TailwindCSS
-   - Highlights:
-     * Google Docs-style real-time collaborative coding workspace with multi-user cursor tracking.
-     * Backend message broker handling concurrent editor sessions with room-based broadcast trees.
-     * Integrated AI Copilot for inline contextual code completions and code generation.
-     * Multi-language sandbox execution environment supporting JavaScript, Python, C++, and Java.
+   - Highlights: Browser-based collaborative code editor supporting multi-user cursor tracking, room synchronization, and code completions.
    - Live URL: https://inline-frontend.vercel.app
-   - GitHub Repos:
-     * Frontend: https://github.com/ameyasharma-ai/inline-frontend
-     * Backend: https://github.com/ameyasharma-ai/inline-backend
+   - Repos: https://github.com/ameyasharma-ai/inline-frontend | https://github.com/ameyasharma-ai/inline-backend
 
 3. CODEGRAPH — AI-Powered Interactive Codebase Architecture Visualizer
-   - Category: Developer Tooling & Static Analysis
+   - Created: 2026-04-30T12:57:05Z
    - Tech Stack: Next.js 15 (App Router), TypeScript, React Flow, TailwindCSS v4, Supabase (PostgreSQL), OpenRouter API
-   - Highlights:
-     * Recursively parses GitHub repository ASTs and ES module imports into directed dependency graphs (DAGs).
-     * High-performance interactive canvas supporting smooth pan, zoom, and animated data-flow path tracing across 200+ nodes.
-     * Generates file-level architectural summaries and system flow insights using LLMs.
-     * Relational caching layer powered by Supabase reducing graph re-analysis latency from ~10s to sub-second.
+   - Highlights: Recursively maps GitHub repository ASTs and ES imports into directed dependency graphs with animated path tracing and Supabase caching.
    - Live URL: https://codegraph-eight.vercel.app
-   - GitHub Repo: https://github.com/ameyasharma-ai/codegraph
+   - Repo: https://github.com/ameyasharma-ai/codegraph
 
-4. ROBOT CORE — Local-First Humanoid Robot Intelligence Engine [Sanitized Showcase]
-   - Category: Embodied AI & Robotics
-   - Tech Stack: Python (asyncio), WebRTC AEC/NS, Silero VAD, Piper ONNX TTS, llama-server (Qwen3.5-4B), OpenCV, YuNet, YOLOv8, WebGL2/Three.js, Mem0, SQLite FTS
-   - Highlights:
-     * Full-duplex speech engine with low-latency barge-in interruption (<200ms) calibrated for hardware microphones.
-     * Continuous 60 FPS spatial perception pipeline featuring YuNet face tracking and YOLOv8 3D object telemetry.
-     * WebGL2 3D humanoid avatar with interactive semantic Inverse Kinematics (gaze tracking, gestures, wave).
-     * On-device privacy-preserving local LLM reasoning with long-term episodic memory.
-   - Architecture Showcase: Private / Sanitized Systems Case Study (Demonstrable on request)
+4. ARCLANE AUTONOMOUS ENGINE — 24/7 Client Acquisition & Deployment Ecosystem
+   - Created: 2026-05-26T16:26:58Z
+   - Tech Stack: Node.js, JavaScript, Python, Playwright, Docker, Telegram Bot API, Vercel REST API, Supabase
+   - Highlights: Continuous background engine executing automated business discovery, qualification, and client website deployments.
+   - Repo: https://github.com/ameyasharma-ai/arclane-autonomous-acquisition-engine
 
-5. ARCLANE AUTONOMOUS ENGINE — 24/7 Client Acquisition & Deployment Ecosystem [Sanitized Showcase]
-   - Category: Autonomous Distributed Systems & Platform Engineering
-   - Tech Stack: Node.js, JavaScript, Python, Playwright/Puppeteer, Docker, Telegram Bot API, Vercel REST API, Supabase
-   - Highlights:
-     * 24/7 autonomous worker daemon performing micro-locality scraping, data enrichment, and lead qualification.
-     * Headless browser automation engine with anti-detection fingerprinting and dynamic proxy rotation.
-     * Automated CI/CD deployment pipeline provisioning customized client landing pages to Vercel upon qualification.
-     * Dual-channel remote operations center via authenticated Telegram Bot and web monitoring HUD.
-   - Architecture Showcase: Enterprise Autonomous System (Clean sanitized architecture)
-
-6. WEARABLE AI READING ASSISTANT — Hands-Free Multimodal Study Device [Sanitized Showcase]
-   - Category: Wearable IoT & Multimodal AI
-   - Tech Stack: Kotlin, Android SDK, Gemini 2.0 Flash-Lite, Bluetooth Foot-Pedal Bus, Camera2 API, Text-to-Speech
-   - Highlights:
-     * Wearable camera study solver triggering hands-free document snapshots via Bluetooth foot-pedal navigation.
-     * Streams high-resolution document feeds to Gemini Flash-Lite for OCR, mathematical derivation, and reasoning.
-     * Real-time audio explanation feedback synthesized directly to user earpiece.
-   - Architecture Showcase: Hardware-Software Hybrid Prototype
-
-7. FISH DETECTION & TRACKING SYSTEM — Marine Aquaculture Computer Vision
-   - Category: Computer Vision & Deep Learning
+5. FISH DETECTION & TRACKING SYSTEM — Marine Aquaculture Computer Vision
+   - Created: 2026-09-27T06:17:15Z
    - Tech Stack: Python, TensorFlow, YOLOv4, OpenCV, Darknet
-   - Highlights:
-     * Real-time underwater biological object detector custom-trained on aquaculture video streams.
-     * Multi-object centroid trajectory tracking with velocity calculation and spatial density heatmaps.
-   - GitHub Repo: https://github.com/ameyasharma-ai/fish-detector
+   - Highlights: Real-time underwater biological object detector with multi-object centroid tracking and movement analytics.
+   - Repo: https://github.com/ameyasharma-ai/fish-detector
+
+6. ROBOT CORE — Local-First Humanoid Robot Intelligence Engine
+   - Created: 2026-09-28T07:47:34Z
+   - Tech Stack: Python (asyncio), WebRTC AEC/NS, Silero VAD, Piper ONNX TTS, llama.cpp (Qwen3.5-4B), OpenCV, YuNet, YOLOv8, WebGL2/Three.js
+   - Highlights: Full-duplex speech engine (<200ms barge-in), 60 FPS face and object tracking, and WebGL2 humanoid avatar.
+   - Repo: https://github.com/ameyasharma-ai/robot
+
+7. WEARABLE AI READING ASSISTANT — Hands-Free Multimodal Study Device
+   - Created: 2026-10-19T16:26:11Z
+   - Tech Stack: Kotlin, Android SDK, Gemini 2.0 Flash-Lite, Bluetooth Foot-Pedal Bus, Camera2 API, Text-to-Speech
+   - Highlights: Hands-free document solver taking snapshots via foot-pedal input and streaming image feeds to Gemini Flash-Lite.
+   - Repo: https://github.com/ameyasharma-ai/Assistance-Device
 
 8. AI DEATH CLOCK & LONGEVITY MONITOR — Actuarial Health Widget
-   - Category: Desktop Telemetry & AI Prompt Systems
-   - Tech Stack: Python, PyQt6/PySide, Google Gemini API, Actuarial Schemas
-   - Highlights:
-     * Glassmorphic desktop HUD evaluating biological vs chronological age using structured JSON prompts.
-     * Automated benchmarking suite comparing model response latency across Gemini Flash and Pro models.
-   - GitHub Repo: https://github.com/ameyasharma-ai/ai-death-clock
+   - Created: 2026-10-25T08:08:25Z
+   - Tech Stack: Python, PyQt, Google Gemini API, Actuarial Schemas
+   - Highlights: Draggable glassmorphic desktop HUD evaluating biological age vs chronological age using structured Gemini API prompts.
+   - Repo: https://github.com/ameyasharma-ai/ai-death-clock
 
 9. 24-HOUR SCREENTIME & LOGIN SESSION CLOCK
-   - Category: Desktop System Telemetry
+   - Created: 2026-10-31T13:49:32Z
    - Tech Stack: Python, PyQt, Windows Win32 API
-   - Highlights:
-     * Real-time analog clock widget tracking active user sessions and OS idle states via low-level Win32 APIs.
-   - GitHub Repo: https://github.com/ameyasharma-ai/screentime-clock
+   - Highlights: Desktop analog clock widget tracking active user sessions and OS idle states via low-level Win32 APIs.
+   - Repo: https://github.com/ameyasharma-ai/screentime-clock
 
 
 ================================================================================
-[2] EDUCATIONAL QUALIFICATIONS
+[2] EDUCATIONAL QUALIFICATIONS (WITH EMBEDDED BADGES)
 ================================================================================
 1. National Institute of Technology Patna (NIT Patna)
+   - Badge: nitp_logo.svg (Official NIT Patna Crest & Seal)
    - Degree: B.Tech in Mechanical Engineering
    - Duration: 2023 – 2028 [Ongoing]
    - CGPA: 8.5 / 10.0
-   - Key Focus: Systems engineering, robotics, algorithms, real-time control, software engineering.
+   - Coursework: Systems engineering, control theory, robotics, algorithms, and software development.
 
 2. Indian Institute of Technology Patna (IIT Patna)
+   - Badge: iitp_logo.svg (Official IIT Patna Seal)
    - Degree: B.Tech in Electrical Engineering
    - Duration: 2024 – 2025 [Dropped]
    - CGPA: 8.0 / 10.0
-   - Focus: Embedded systems, signal processing, electrical circuits.
 
 3. New Era Public School, Munger
-   - Qualification: Class XII (Senior Secondary)
+   - Badge: new_era_logo.svg (New Era Senior Secondary Emblem)
+   - Qualification: Class XII (Senior Secondary - PCM)
    - Duration: 2021 – 2023
-   - Percentage: 78.0% (Science Stream - PCM)
+   - Percentage: 78.0%
 
 4. Notre Dame Academy, Munger
+   - Badge: notre_dame_logo.svg (Notre Dame Academy Crest)
    - Qualification: Class X (Secondary School)
    - Duration: 2008 – 2021
    - Percentage: 93.4%
 
 
 ================================================================================
-[3] WORK EXPERIENCE
+[3] CERTIFICATIONS (ALL TUTEDUDE VERIFIED WITH DEDICATED BADGES)
 ================================================================================
-1. Software Development Contributor — Google Developer Student Clubs (GDSC), NIT Patna
-   - Duration: Jan 2026 – Present
-   - Key Contributions:
-     * Engineered internal web platform modules for automated workflow pipelines and active member telemetry.
-     * Optimized backend service execution and database queries, achieving significant API response time reductions.
-     * Collaborated in sprint-based agile delivery to deploy resilient, production-ready full-stack components.
-
-2. Software Engineering Intern — Pixalytix Digital Solutions LLP
-   - Duration: Apr 2025 – Jun 2025
-   - Key Contributions:
-     * Developed and shipped scalable frontend interfaces and backend micro-endpoints for enterprise client portals.
-     * Diagnosed and patched system latency bottlenecks across server APIs, elevating stability and request throughput.
-     * Integrated third-party webhooks, stateful caching, and clean schema migrations across production environments.
-
-
-================================================================================
-[4] CERTIFICATIONS
-================================================================================
-1. Machine Learning (ML)
-   - Issuer: TuteDude
+1. Machine Learning (ML) — TuteDude
+   - Badge: tutedude_ml.svg
    - Verification URL: https://upskill.tutedude.com/certificate/TD-AMEY-ML-1635
 
-2. Artificial Intelligence Tools (AI Tools)
-   - Issuer: TuteDude
+2. Artificial Intelligence Tools — TuteDude
+   - Badge: tutedude_ai.svg
    - Verification URL: https://upskill.tutedude.com/certificate/TD-AMEY-AIT-1054
 
-3. Data Analytics
-   - Issuer: TuteDude
+3. Data Analytics — TuteDude
+   - Badge: tutedude_da.svg
    - Verification URL: https://tutedude694.s3.ap-south-1.amazonaws.com/Certificates/TD-AMEY-DA-1059.pdf
 
-4. Microsoft PowerBI
-   - Issuer: TuteDude
+4. Microsoft PowerBI — TuteDude
+   - Badge: tutedude_pb.svg
    - Verification URL: https://upskill.tutedude.com/certificate/TD-AMEY-PB-2118
 
 
 ================================================================================
-[5] TECHNICAL SKILLS SUMMARY
+[4] WORK EXPERIENCE
 ================================================================================
-- Languages: JavaScript (ES6+), TypeScript, Python 3, SQL, C++, Kotlin, HTML5/CSS3
-- Frontend: React.js, Next.js (App Router), Vite, TailwindCSS v4, React Flow, CodeMirror 6, WebSockets
-- Backend & Frameworks: Node.js, Express.js, FastAPI, Uvicorn, RESTful APIs, Socket.io
-- Databases & Storage: PostgreSQL, Supabase, SQLite, Redis, MongoDB
-- AI & Machine Learning: LLM Orchestration, Prompt Engineering, RAG (Retrieval-Augmented Generation), OpenRouter, Groq Whisper STT, Edge-TTS, OpenCV, YOLOv4/YOLOv8, Silero VAD, llama.cpp
-- Developer Tools & DevOps: Git, GitHub Actions, Docker, Linux/Bash, Vercel, Postman
-- Core Fundamentals: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), System Design, Asynchronous Networking
+1. Software Development Contributor — Google Developer Student Clubs (GDSC), NIT Patna
+   - Duration: Jan 2026 – Present
+   - Built internal platform features for workflow coordination and member telemetry.
+   - Refactored backend endpoints and optimized database queries to improve latency.
+
+2. Software Engineering Intern — Pixalytix Digital Solutions LLP
+   - Duration: Apr 2025 – Jun 2025
+   - Developed client-facing web pages and integrated backend REST endpoints using React and Node.js.
+   - Assisted in debugging API performance bottlenecks and improved data caching stability.
 
 
 ================================================================================
-[6] OPEN SOURCE & GITHUB STATS
+[5] ATS-FRIENDLY SINGLE-PAGE GROUNDED RESUME
 ================================================================================
-- GitHub Profile: https://github.com/ameyasharma-ai
-- Total Public/Private Repositories: 21
-- Key Contributions:
-  * Full-duplex voice streaming architectures
-  * Codebase visualization tools (CodeGraph)
-  * Real-time collaborative synchronization engines (InLine)
-  * Computer vision pipelines for marine tracking and face telemetry
-- GitHub Stats Card Integration:
-  * Profile Readme Stats: https://github-readme-stats.vercel.app/api?username=ameyasharma-ai&show_icons=true&theme=radical
-  * Top Languages: https://github-readme-stats.vercel.app/api/top-langs/?username=ameyasharma-ai&layout=compact&theme=radical
-  * GitHub Streak: https://streak-stats.demolab.com/?user=ameyasharma-ai&theme=radical
-
-
-================================================================================
-[7] ATS-FRIENDLY RESUME & RECRUITER CONTACT
-================================================================================
-Resume Document: C:\Users\Ameya Sharma\Downloads\PORTFOLIO-ALPHA\Ameya_Sharma_Resume.pdf
-Direct Email: sharmaameya999@gmail.com
-Direct Mobile: +91 9097999898
-Current Availability: Available for Summer 2026 & Autumn 2026 Software Engineering / AI Engineer Internships
+- Vector PDF: C:\Users\Ameya Sharma\Downloads\PORTFOLIO-ALPHA\Ameya_Sharma_Resume.pdf
+- Template HTML: C:\Users\Ameya Sharma\Downloads\PORTFOLIO-ALPHA\Ameya_Sharma_Resume.html
+- Design: Strictly 1 page, humble and grounded tone, Google XYZ formula, ATS parser compatible.
+- In-App Route: /resume
 ================================================================================
