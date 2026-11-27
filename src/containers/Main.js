@@ -7,6 +7,7 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import ProjectCaseStudy from "../pages/projectCaseStudy/ProjectCaseStudy";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.js";
@@ -82,11 +83,20 @@ export default class Main extends Component {
 
           <Route
             path="/projects"
+            exact
             render={(props) => <Projects {...props} theme={this.props.theme} />}
           />
           <Route
+            path="/projects/:slug"
+            render={(props) => (
+              <ProjectCaseStudy {...props} theme={this.props.theme} />
+            )}
+          />
+          <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <ResumePage {...props} theme={this.props.theme} />
+            )}
           />
           <Route
             path="*"
