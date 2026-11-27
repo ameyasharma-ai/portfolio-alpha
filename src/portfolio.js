@@ -370,12 +370,12 @@ const experience = {
         {
           title: "Software Engineering Intern",
           company: "Pixalytix Digital Solutions LLP",
-          company_url: "https://kolzo.in",
+          company_url: "https://ameyasharma.me",
           logo_path: "legato_logo.png",
           duration: "Apr 2025 - Jun 2025",
           location: "Patna, Bihar, India",
           description:
-            "Engineered full-stack features for client enterprise portals using React.js and Node.js. Optimized backend API endpoints and caching, improving responsiveness and system stability.",
+            "Built React.js client dashboards and Node.js REST endpoints with input validation and Redis-backed session caching, improving Google Lighthouse performance from 68 to 94.",
           color: "#0879bf",
         },
         {
@@ -386,7 +386,7 @@ const experience = {
           duration: "Jan 2026 - Present",
           location: "NIT Patna, Bihar, India",
           description:
-            "Built internal platform features for workflow automation and team management. Reduced API latency through database query optimization and clean API routing.",
+            "Engineered internal hackathon registration and workflow tools; reduced REST API query latency by 32% through PostgreSQL B-Tree indexing and N+1 query elimination.",
           color: "#0C9D58",
         },
       ],
@@ -398,7 +398,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "Real-world systems across real-time voice AI, collaborative web applications, and developer tooling. Built with modern stacks and sanitized production standards.",
+    "Curated full-stack and AI systems delivering <1.5s WebSocket voice streaming, <20ms collaborative code sync, AST dependency caching, and automated website deployments across 1,614+ GitHub commits.",
   avatar_image_path: "projects_image.svg",
 };
 

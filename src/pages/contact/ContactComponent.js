@@ -131,13 +131,36 @@ class Contact extends Component {
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {phoneSection["subtitle"]}
+                  <a
+                    href={`tel:${phoneSection["subtitle"].replace(/\s+/g, "")}`}
+                    style={{
+                      color: theme.text,
+                      textDecoration: "underline",
+                      fontWeight: 600,
+                    }}
+                  >
+                    {phoneSection["subtitle"]}
+                  </a>
                 </p>
-                <div className="address-btn-div">
+                <div
+                  className="address-btn-div"
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "12px",
+                    justifyContent: "center",
+                  }}
+                >
                   <Button
                     text="Visit on Google Maps"
                     newTab={true}
                     href={addressSection.location_map_link}
+                    theme={theme}
+                  />
+                  <Button
+                    text="📞 Call Mobile"
+                    newTab={false}
+                    href={`tel:${phoneSection["subtitle"].replace(/\s+/g, "")}`}
                     theme={theme}
                   />
                 </div>
