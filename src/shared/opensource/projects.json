@@ -1,34 +1,6 @@
 {
   "data": [
     {
-      "id": "proj-lisa",
-      "name": "Lisa — Multimodal Personal AI Assistant",
-      "createdAt": "2026-04-24T18:05:16Z",
-      "firstCommit": "2026-04-24T18:13:41Z",
-      "firstCommitFormatted": "Apr 24, 2026 (18:13 UTC)",
-      "url": "https://github.com/ameyasharma-ai/lisa",
-      "description": "Full-stack voice-reactive personal AI assistant pairing a multimodal assistant UI with a FastAPI Python inference backend for speech recognition, OpenCV vision parsing, and automated system tasks.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "FastAPI",
-          "iconifyClass": "simple-icons:fastapi"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
-        },
-        {
-          "name": "Docker",
-          "iconifyClass": "simple-icons:docker"
-        }
-      ]
-    },
-    {
       "id": "proj-groot-os",
       "name": "Groot OS — Real-Time Voice-Reactive AI Interface",
       "createdAt": "2026-04-26T16:26:43Z",
@@ -117,57 +89,13 @@
       ]
     },
     {
-      "id": "proj-gmaps-scraper",
-      "name": "Google Maps & Places Lead Discovery Scraper",
-      "createdAt": "2026-05-21T08:58:01Z",
-      "firstCommit": "2026-05-21T08:59:15Z",
-      "firstCommitFormatted": "May 21, 2026 (08:59 UTC)",
-      "url": "https://github.com/ameyasharma-ai/gmaps-scraper",
-      "description": "Geographic business data extraction engine querying Google Places API with coordinate grid tiling, phone verification, and automated CSV/JSON serialization.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Playwright",
-          "iconifyClass": "simple-icons:playwright"
-        },
-        {
-          "name": "Pandas",
-          "iconifyClass": "simple-icons:pandas"
-        }
-      ]
-    },
-    {
-      "id": "proj-email_validator",
-      "name": "ZeroBounce & MX Real-Time Email Validator",
-      "createdAt": "2026-05-25T12:25:44Z",
-      "firstCommit": "2026-05-25T12:26:28Z",
-      "firstCommitFormatted": "May 25, 2026 (12:26 UTC)",
-      "url": "https://github.com/ameyasharma-ai/email_validator",
-      "description": "Asynchronous SMTP handshake verifier checking domain MX records, disposable email heuristics, and mailbox deliverability at line-speed.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "DNS",
-          "iconifyClass": "simple-icons:cloudflare"
-        }
-      ]
-    },
-    {
       "id": "proj-arclane-autonomous-acquisition-engine",
-      "name": "Arclane — Autonomous Acquisition & Web Deployment Engine",
+      "name": "Arclane — Autonomous SMB Workflow & Deployment Engine",
       "createdAt": "2026-05-26T16:26:58Z",
       "firstCommit": "2026-05-26T11:14:42Z",
       "firstCommitFormatted": "May 26, 2026 (11:14 UTC)",
       "url": "https://github.com/ameyasharma-ai/arclane-autonomous-acquisition-engine",
-      "description": "24/7 autonomous SMB acquisition engine combining micro-locality grid scraping, Next.js/Tailwind production site generation, programmatic Vercel REST deployments, and live Telegram Bot telemetry.",
+      "description": "24/7 autonomous SMB workflow automation engine combining geographic business discovery, Next.js/Tailwind production site generation, programmatic Vercel REST deployments, and live Telegram Bot telemetry.",
       "isFork": false,
       "languages": [
         {
@@ -185,54 +113,6 @@
         {
           "name": "Telegram API",
           "iconifyClass": "logos-telegram"
-        }
-      ]
-    },
-    {
-      "id": "proj-fish-detector",
-      "name": "Autonomous Computer Vision Fish Detector",
-      "createdAt": "2026-09-27T06:17:15Z",
-      "firstCommit": "2026-09-27T06:18:00Z",
-      "firstCommitFormatted": "Sep 27, 2026 (06:18 UTC)",
-      "url": "https://github.com/ameyasharma-ai/fish-detector",
-      "description": "YOLO-powered real-time computer vision system classifying underwater aquatic species with bounding box tracking and FPS-accelerated inference.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "YOLO",
-          "iconifyClass": "simple-icons:opencv"
-        },
-        {
-          "name": "PyTorch",
-          "iconifyClass": "logos-pytorch"
-        }
-      ]
-    },
-    {
-      "id": "proj-robot",
-      "name": "Robot — Autonomous AI Voice & Hardware Engine",
-      "createdAt": "2026-09-28T07:47:34Z",
-      "firstCommit": "2026-09-29T11:10:08Z",
-      "firstCommitFormatted": "Sep 29, 2026 (11:10 UTC)",
-      "url": "https://github.com/ameyasharma-ai/robot",
-      "description": "Edge computing and multimodal AI robotics pipeline orchestrating localized sensory telemetry, speech synthesis, and dual-column LLM inference routers.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "FastAPI",
-          "iconifyClass": "simple-icons:fastapi"
-        },
-        {
-          "name": "WebSockets",
-          "iconifyClass": "simple-icons:socketdotio"
         }
       ]
     },
@@ -261,13 +141,13 @@
       ]
     },
     {
-      "id": "proj-ai-death-clock",
-      "name": "AI Actuarial Longevity Monitor & Death Clock",
-      "createdAt": "2026-10-25T08:08:25Z",
-      "firstCommit": "2026-10-25T08:08:33Z",
-      "firstCommitFormatted": "Oct 25, 2026 (08:08 UTC)",
-      "url": "https://github.com/ameyasharma-ai/ai-death-clock",
-      "description": "Health telemetry and actuarial longevity calculator modeling lifestyle habits and statistical survival distributions using Google Gemini API reasoning.",
+      "id": "proj-robot",
+      "name": "Robot — Multimodal AI Voice & Hardware Engine",
+      "createdAt": "2026-09-28T07:47:34Z",
+      "firstCommit": "2026-09-29T11:10:08Z",
+      "firstCommitFormatted": "Sep 29, 2026 (11:10 UTC)",
+      "url": "https://github.com/ameyasharma-ai/robot",
+      "description": "Edge computing and multimodal AI robotics pipeline orchestrating localized sensory telemetry, speech synthesis, and dual-column LLM inference routers.",
       "isFork": false,
       "languages": [
         {
@@ -275,48 +155,12 @@
           "iconifyClass": "logos-python"
         },
         {
-          "name": "Gemini API",
-          "iconifyClass": "simple-icons:google"
-        }
-      ]
-    },
-    {
-      "id": "proj-screentime-clock",
-      "name": "System Screentime & Digital Wellbeing Monitor",
-      "createdAt": "2026-10-31T13:49:32Z",
-      "firstCommit": "2026-10-31T13:49:20Z",
-      "firstCommitFormatted": "Oct 31, 2026 (13:49 UTC)",
-      "url": "https://github.com/ameyasharma-ai/screentime-clock",
-      "description": "Lightweight cross-platform background daemon recording active process window handles and tracking productivity metrics with sub-0.1% CPU overhead.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
         },
         {
-          "name": "Windows API",
-          "iconifyClass": "logos-microsoft-windows"
-        }
-      ]
-    },
-    {
-      "id": "proj-TheGenesis",
-      "name": "TheGenesis — Autonomous Core Framework",
-      "createdAt": "2026-11-24T06:38:56Z",
-      "firstCommit": "2026-11-24T06:38:55Z",
-      "firstCommitFormatted": "Nov 24, 2026 (06:38 UTC)",
-      "url": "https://github.com/ameyasharma-ai/TheGenesis",
-      "description": "Foundational architecture and prompt engineering orchestration engine for scalable autonomous AI multi-agent workflows.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "AI Agents",
-          "iconifyClass": "simple-icons:openai"
+          "name": "WebSockets",
+          "iconifyClass": "simple-icons:socketdotio"
         }
       ]
     }
