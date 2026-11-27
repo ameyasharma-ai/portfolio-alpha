@@ -19,9 +19,9 @@ const seo = {
 
 // Home Page
 const greeting = {
-  title: "Ameya Sharma",
+  title: "Hi, I'm Ameya 👋",
   logo_name: "Ameya Sharma",
-  nickname: "ameyasharma-ai",
+  nickname: "",
   subTitle:
     "Full-Stack Software Engineer & AI Systems Developer building low-latency distributed systems, real-time voice AI, and scalable web platforms.",
   resumeLink: "Ameya_Sharma_Resume.pdf",

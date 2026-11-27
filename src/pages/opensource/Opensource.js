@@ -50,7 +50,8 @@ class Opensource extends Component {
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
-              gap: "18px",
+              alignItems: "stretch",
+              gap: "20px",
               marginBottom: "35px",
             }}
           >
@@ -63,24 +64,105 @@ class Opensource extends Component {
                 boxShadow: "0 6px 20px rgba(0,0,0,0.18)",
               }}
             />
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ameyasharma-ai&layout=compact&theme=radical&hide_border=true"
-              alt="Top Languages"
+            <div
               style={{
-                maxWidth: "100%",
+                backgroundColor: "#141321",
                 borderRadius: "10px",
+                padding: "20px 24px",
+                minWidth: "310px",
+                maxWidth: "420px",
+                flex: "1 1 320px",
+                textAlign: "left",
                 boxShadow: "0 6px 20px rgba(0,0,0,0.18)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
-            />
-            <img
-              src="https://streak-stats.demolab.com/?user=ameyasharma-ai&theme=radical&hide_border=true"
-              alt="GitHub Streak"
-              style={{
-                maxWidth: "100%",
-                borderRadius: "10px",
-                boxShadow: "0 6px 20px rgba(0,0,0,0.18)",
-              }}
-            />
+            >
+              <h3
+                style={{
+                  color: "#fe428e",
+                  fontSize: "18px",
+                  fontWeight: 700,
+                  margin: "0 0 14px 0",
+                  fontFamily: "Google Sans Bold, sans-serif",
+                }}
+              >
+                Most Used Languages
+              </h3>
+              <div
+                style={{
+                  display: "flex",
+                  height: "10px",
+                  borderRadius: "6px",
+                  overflow: "hidden",
+                  marginBottom: "16px",
+                  backgroundColor: "#25233a",
+                }}
+              >
+                <div
+                  title="Python 55.4%"
+                  style={{ width: "55.4%", backgroundColor: "#FFD43B" }}
+                />
+                <div
+                  title="JavaScript 18.7%"
+                  style={{ width: "18.7%", backgroundColor: "#F97316" }}
+                />
+                <div
+                  title="TypeScript 17.8%"
+                  style={{ width: "17.8%", backgroundColor: "#3178C6" }}
+                />
+                <div
+                  title="CSS 4.4%"
+                  style={{ width: "4.4%", backgroundColor: "#10B981" }}
+                />
+                <div
+                  title="Kotlin 3.7%"
+                  style={{ width: "3.7%", backgroundColor: "#A855F7" }}
+                />
+              </div>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "8px 16px",
+                  fontSize: "13px",
+                  color: "#a9fef7",
+                }}
+              >
+                {[
+                  { name: "Python", pct: "55.4%", color: "#FFD43B" },
+                  { name: "JavaScript", pct: "18.7%", color: "#F97316" },
+                  { name: "TypeScript", pct: "17.8%", color: "#3178C6" },
+                  { name: "CSS", pct: "4.4%", color: "#10B981" },
+                  { name: "Kotlin", pct: "3.7%", color: "#A855F7" },
+                ].map((lang) => (
+                  <div
+                    key={lang.name}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <span
+                      style={{
+                        width: "10px",
+                        height: "10px",
+                        borderRadius: "50%",
+                        backgroundColor: lang.color,
+                        display: "inline-block",
+                        flexShrink: 0,
+                      }}
+                    />
+                    <span>
+                      {lang.name}{" "}
+                      <strong style={{ color: "#ffffff" }}>{lang.pct}</strong>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <Fade bottom duration={1000} distance="20px">
