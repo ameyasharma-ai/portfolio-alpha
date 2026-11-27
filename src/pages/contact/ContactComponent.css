@@ -9,10 +9,13 @@
 
 .contact-heading-div {
   display: flex;
+  align-items: center;
 }
 
 .blog-heading-div {
   display: flex;
+  align-items: center;
+  margin-top: 70px;
 }
 
 .address-heading-div {
@@ -112,6 +115,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .blogsite-btn-div {
