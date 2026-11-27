@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Ameya Sharma",
   nickname: "",
   subTitle:
-    "Full-Stack Software Engineer & AI Systems Developer building low-latency distributed systems, real-time voice AI, and scalable web platforms.",
+    "3rd-year B.Tech undergrad at NIT Patna (8.5 CGPA) building real-time voice AI (Groot OS), collaborative dev tools (InLine, CodeGraph), and autonomous web engines (Arclane). Open for Winter 2026 – Summer 2027 SWE & AI Internships.",
   resumeLink: "Ameya_Sharma_Resume.pdf",
   portfolio_repository: "https://github.com/ameyasharma-ai/portfolio-alpha",
   githubProfile: "https://github.com/ameyasharma-ai",
