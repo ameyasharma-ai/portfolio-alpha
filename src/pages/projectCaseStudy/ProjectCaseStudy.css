@@ -185,6 +185,14 @@
   margin-bottom: 12px;
 }
 
+.case-study-takeaway {
+  border-radius: 6px;
+  padding: 24px 28px;
+  margin-top: 24px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 10px 30px -15px;
+}
+
 .case-study-nav-footer {
   display: flex;
   justify-content: space-between;

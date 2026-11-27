@@ -93,6 +93,14 @@ class ProjectCaseStudy extends Component {
                     {cs.badge}
                   </span>
                 )}
+                {cs.role && (
+                  <span
+                    className="case-study-meta"
+                    style={{ color: theme.text, fontWeight: 600 }}
+                  >
+                    {cs.role}
+                  </span>
+                )}
                 <span
                   className="case-study-meta"
                   style={{ color: theme.secondaryText }}
@@ -202,7 +210,7 @@ class ProjectCaseStudy extends Component {
                       borderBottom: `1px solid ${theme.text}18`,
                     }}
                   >
-                    Problem & Engineering Goal
+                    Problem & Business Context
                   </h2>
                   <p
                     className="case-study-paragraph"
@@ -214,6 +222,38 @@ class ProjectCaseStudy extends Component {
               </Fade>
             )}
 
+            {cs.capabilities && cs.capabilities.length > 0 && (
+              <Fade bottom duration={1200} distance="20px">
+                <section
+                  className="case-study-section"
+                  style={{
+                    backgroundColor: theme.body,
+                    border: `1px solid ${theme.text}20`,
+                  }}
+                >
+                  <h2
+                    className="case-study-section-title"
+                    style={{
+                      color: theme.text,
+                      borderBottom: `1px solid ${theme.text}18`,
+                    }}
+                  >
+                    Core Capabilities Built
+                  </h2>
+                  <ul
+                    className="case-study-list"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {cs.capabilities.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </section>
+              </Fade>
+            )}
+          </div>
+
+          <div className="case-study-grid">
             {cs.architecture && cs.architecture.length > 0 && (
               <Fade bottom duration={1200} distance="20px">
                 <section
@@ -230,7 +270,7 @@ class ProjectCaseStudy extends Component {
                       borderBottom: `1px solid ${theme.text}18`,
                     }}
                   >
-                    End-to-End Architecture
+                    End-to-End System Architecture
                   </h2>
                   <ul
                     className="case-study-list"
@@ -243,34 +283,61 @@ class ProjectCaseStudy extends Component {
                 </section>
               </Fade>
             )}
+
+            {cs.challenges && cs.challenges.length > 0 && (
+              <Fade bottom duration={1200} distance="20px">
+                <section
+                  className="case-study-section"
+                  style={{
+                    backgroundColor: theme.body,
+                    border: `1px solid ${theme.text}20`,
+                  }}
+                >
+                  <h2
+                    className="case-study-section-title"
+                    style={{
+                      color: theme.text,
+                      borderBottom: `1px solid ${theme.text}18`,
+                    }}
+                  >
+                    Engineering Challenges & Tradeoffs
+                  </h2>
+                  <ul
+                    className="case-study-list"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {cs.challenges.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </section>
+              </Fade>
+            )}
           </div>
 
-          {cs.challenges && cs.challenges.length > 0 && (
+          {cs.takeaway && (
             <Fade bottom duration={1200} distance="20px">
               <section
-                className="case-study-section"
+                className="case-study-takeaway"
                 style={{
-                  backgroundColor: theme.body,
-                  border: `1px solid ${theme.text}20`,
+                  backgroundColor: theme.highlight,
                 }}
               >
                 <h2
                   className="case-study-section-title"
                   style={{
                     color: theme.text,
-                    borderBottom: `1px solid ${theme.text}18`,
+                    borderBottom: `1px solid ${theme.text}22`,
                   }}
                 >
-                  Production Decisions & Key Takeaways
+                  Stakeholder & Engineering Impact
                 </h2>
-                <ul
-                  className="case-study-list"
-                  style={{ color: theme.secondaryText }}
+                <p
+                  className="case-study-paragraph"
+                  style={{ color: theme.text }}
                 >
-                  {cs.challenges.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
-                </ul>
+                  {cs.takeaway}
+                </p>
               </section>
             </Fade>
           )}

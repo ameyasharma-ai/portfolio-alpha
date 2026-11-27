@@ -10,7 +10,7 @@
       "url": "https://groot-frontend-orpin.vercel.app",
       "liveUrl": "https://groot-frontend-orpin.vercel.app",
       "githubUrl": "https://github.com/ameyasharma-ai/groot-frontend",
-      "description": "End-to-end sub-1.5s speech-to-speech AI platform combining a Next.js/TypeScript live waveform UI with a FastAPI WebSocket audio pipeline powered by Groq Whisper v3-turbo, multi-LLM failover routing, and neural Edge TTS.",
+      "description": "End-to-end sub-1.5s speech-to-speech AI platform combining a React/Vite live waveform UI with a FastAPI WebSocket audio pipeline, Groq Whisper v3-turbo, TF-IDF RAG memory, multi-LLM failover across 10+ models, and streaming Edge-TTS.",
       "isFork": false,
       "languages": [
         {
@@ -36,38 +36,45 @@
       ],
       "caseStudy": {
         "badge": "Tier 1 • Real-Time Voice AI",
-        "overview": "Groot OS is a full-duplex conversational voice AI interface designed to eliminate the awkward multi-second pauses common in traditional request-response voice assistants. By streaming raw audio over WebSockets and chunking synthesized speech at the sentence boundary, it achieves sub-1.5s end-to-end conversational turnaround.",
+        "role": "Sole Architect & Full-Stack Engineer",
+        "overview": "Groot OS is a production-deployed, full-duplex conversational voice AI assistant built to deliver natural, human-paced voice interaction in under 1.5 seconds. Instead of blocking on sequential HTTP calls, it streams audio over WebSockets, retrieves relevant context via lightweight TF-IDF + cosine-similarity RAG, routes inference across 10+ LLMs with automatic failover, and chunks neural TTS at sentence boundaries with instant user barge-in.",
         "highlights": [
           {
             "value": "< 1.5s",
-            "label": "End-to-end speech-to-speech turnaround"
+            "label": "End-to-end speech-to-speech latency"
           },
           {
-            "value": "WebSockets",
-            "label": "Full-duplex bidirectional audio streaming"
+            "value": "10+ Models",
+            "label": "Dynamic OpenRouter + Groq failover router"
           },
           {
-            "value": "Multi-LLM",
-            "label": "Automated OpenRouter + Groq failover"
+            "value": "TF-IDF RAG",
+            "label": "Sub-10ms local Scikit-learn memory retrieval"
           },
           {
             "value": "Barge-In",
-            "label": "Instant client-side audio interruption"
+            "label": "Instant client-side audio queue cancellation"
           }
         ],
-        "problem": "Standard voice AI wrappers wait for a full transcription, a full LLM text completion, and a full TTS audio file before playing sound—resulting in 4–7 second delays and broken UX when a user tries to interrupt mid-sentence.",
+        "problem": "Most web-based voice AI demos suffer from 4–7 second dead-air delays because they wait for the entire LLM response to finish before synthesizing speech, crash when a single free-tier model hits a 429 rate limit, and cannot be interrupted mid-sentence.",
+        "capabilities": [
+          "Sub-1.5s full-duplex speech-to-speech pipeline using Groq Whisper (whisper-large-v3-turbo) and streaming neural Edge-TTS.",
+          "Dynamic Multi-LLM Failover Router across 10+ OpenRouter and Groq models with automatic circuit-breaking on timeouts or rate limits.",
+          "Lightweight local RAG memory engine built with Scikit-learn TF-IDF vectorization and cosine similarity for zero-latency context injection.",
+          "Interactive React/Vite voice HUD featuring real-time audio waveform rendering and instant barge-in interruption."
+        ],
         "architecture": [
-          "Frontend (Next.js + TypeScript): Captures microphone audio streams, renders real-time Canvas waveform telemetry, and manages Web Audio API playback queues with instant barge-in cancellation.",
-          "Transport Layer: Full-duplex WebSocket connection between the browser and FastAPI backend for zero-overhead audio chunk streaming.",
-          "Speech-to-Text: Routes incoming audio buffers to Groq Whisper v3-turbo for near-instant transcription.",
-          "Inference & Failover: Streams LLM tokens through a multi-provider failover router across Groq and OpenRouter to prevent rate-limit drops.",
-          "Streaming TTS: Buffers tokens only up to sentence boundaries and dispatches neural Edge TTS audio chunks back to the client while the LLM is still generating."
+          "Client Audio Capture (React/Vite + Web Audio API): Streams user voice frames over a persistent WebSocket while visualizing microphone amplitude and managing an ordered audio playback queue.",
+          "Ingestion & Transcription (FastAPI + Groq Whisper v3-turbo): Receives raw audio buffers asynchronously and transcribes speech in ~200–300ms.",
+          "Context & Routing Layer: Queries Scikit-learn TF-IDF + cosine similarity memory for relevant past facts, then dispatches the prompt to a priority-ordered OpenRouter/Groq LLM router.",
+          "Sentence-Boundary TTS Chunking: As tokens stream in, the backend flushes complete sentences directly to Edge-TTS and pushes MP3 audio chunks down the WebSocket before generation even finishes."
         ],
         "challenges": [
-          "Eliminated audio stutter during playback by decoupling sentence-level TTS synthesis from WebSocket frame reception via an asynchronous playback queue.",
-          "Implemented client-side barge-in detection so speaking over the assistant immediately flushes queued audio buffers and aborts stale backend generation.",
-          "Added provider fallback logic so API rate limits or transient 429s automatically reroute without dropping the live voice session."
-        ]
+          "Eliminated mid-sentence audio stutter by decoupling TTS synthesis from WebSocket frame emission via an async producer-consumer queue.",
+          "Implemented deterministic barge-in handling: when the user speaks during playback, the client immediately flushes queued Web Audio buffers and signals the FastAPI task to cancel in-flight generation.",
+          "Replaced heavy vector-database roundtrips with in-memory Scikit-learn TF-IDF retrieval, cutting RAG overhead to single-digit milliseconds."
+        ],
+        "takeaway": "Demonstrates production readiness in asynchronous Python (FastAPI, WebSockets), real-time browser audio APIs, fault-tolerant LLM routing, and low-latency system optimization—skills directly transferable to AI product teams and real-time backend engineering roles."
       }
     },
     {
@@ -80,7 +87,7 @@
       "url": "https://inline-frontend.vercel.app",
       "liveUrl": "https://inline-frontend.vercel.app",
       "githubUrl": "https://github.com/ameyasharma-ai/inline-frontend",
-      "description": "Full-duplex collaborative coding workspace (Google Docs for developers) built with a React/TypeScript Monaco Editor frontend and a distributed Node.js + Socket.io room synchronization backend delivering sub-20ms multi-cursor sync.",
+      "description": "Full-duplex collaborative coding workspace (Google Docs for developers) built with a React/TypeScript CodeMirror 6 frontend and a distributed Node.js + Express + Socket.io room synchronization backend delivering sub-20ms multi-cursor sync.",
       "isFork": false,
       "languages": [
         {
@@ -102,35 +109,42 @@
       ],
       "caseStudy": {
         "badge": "Tier 1 • Real-Time Collaboration",
-        "overview": "InLine is a browser-based collaborative code editor engineered for pair programming, technical interviews, and live debugging. It pairs a responsive React + Monaco Editor frontend with a Node.js + Socket.io room synchronization server.",
+        "role": "Full-Stack TypeScript Engineer",
+        "overview": "InLine (CodeSync) is a zero-setup collaborative web IDE built for live technical interviews, pair programming, and remote debugging. It pairs a TypeScript + React + CodeMirror 6 workspace with a Node.js + Express + Socket.io synchronization server to broadcast edits and multi-user cursor positions across rooms in under 20ms.",
         "highlights": [
           {
             "value": "< 20ms",
             "label": "Socket.io room edit broadcast latency"
           },
           {
-            "value": "12+ Langs",
-            "label": "Monaco syntax highlighting & keybindings"
+            "value": "CodeMirror 6",
+            "label": "Modular TypeScript editor with syntax themes"
           },
           {
             "value": "Live Cursors",
-            "label": "Multi-user presence & room isolation"
+            "label": "Multi-user presence & isolated room IDs"
           },
           {
             "value": "AI Copilot",
-            "label": "Inline AI code completion assistance"
+            "label": "Integrated inline code completion helper"
           }
         ],
-        "problem": "Sharing code snippets over screen-share or chat breaks workflow during live interviews and debugging sessions. Teams need a zero-setup URL-based room where multiple developers can edit simultaneously with live cursor presence.",
+        "problem": "Screen-sharing code over video calls introduces compression blur and forces one developer to type while others watch passively. Engineering teams and interviewers need an instant, shareable URL where multiple peers can edit and navigate the same buffer concurrently.",
+        "capabilities": [
+          "Instant shareable coding rooms with isolated WebSocket namespaces and live participant presence indicators.",
+          "Real-time multi-user cursor tracking and document synchronization across distributed browser tabs.",
+          "CodeMirror 6 editor integration with multi-language syntax highlighting, TailwindCSS UI, and AI-assisted code completions."
+        ],
         "architecture": [
-          "Editor Frontend (React + TypeScript): Integrates Monaco Editor / CodeMirror 6 with multi-language syntax highlighting, custom keybindings, and inline AI code assistance.",
-          "Real-Time Room Server (Node.js + Express + Socket.io): Manages isolated room lifecycles, participant presence tracking, and incremental delta broadcasts.",
-          "State Sync: Broadcasts document mutations and cursor coordinates across connected peers while preventing echo loops on the originating client."
+          "Frontend Workspace (React + TypeScript + Vite + TailwindCSS): Hosts the CodeMirror 6 editor instance, room join/share controls, language switcher, and AI completion panel.",
+          "WebSocket Transport (Node.js + Express + Socket.io): Maintains active room memberships, broadcasts incremental document changes to peer sockets, and relays cursor/selection offsets.",
+          "Conflict & Loop Prevention: Tags remote state updates with origin annotations before dispatching editor transactions so incoming changes never re-trigger outbound socket emissions."
         ],
         "challenges": [
-          "Prevented infinite update loops between local editor `onChange` events and incoming Socket.io patches by tagging remote transactions before applying them to the editor model.",
-          "Handled abrupt disconnects and reconnects cleanly in room state so active participants never see stale ghost cursors."
-        ]
+          "Eliminated infinite edit echo loops between local `onChange` listeners and incoming Socket.io updates by tagging remote transactions at the CodeMirror 6 state layer.",
+          "Handled abrupt tab closures and network reconnects gracefully so room participant lists and remote cursor decorations stay accurate without memory leaks."
+        ],
+        "takeaway": "Proves strong full-stack TypeScript fundamentals, stateful WebSocket architecture, and event-driven UI engineering—core capabilities sought by SaaS, developer-tooling, and collaborative web product teams."
       }
     },
     {
@@ -143,7 +157,7 @@
       "url": "https://codegraph-eight.vercel.app",
       "liveUrl": "https://codegraph-eight.vercel.app",
       "githubUrl": "https://github.com/ameyasharma-ai/codegraph",
-      "description": "Developer productivity tool parsing GitHub repository ASTs and ES module imports into interactive dynamic dependency graphs with React Flow path tracing and Supabase PostgreSQL caching.",
+      "description": "AI-powered developer tool built with Next.js 15 App Router, TypeScript, React Flow, and Supabase (PostgreSQL) that recursively maps GitHub repository ASTs and ES module imports into interactive dependency graphs with animated path tracing.",
       "isFork": false,
       "languages": [
         {
@@ -165,48 +179,55 @@
       ],
       "caseStudy": {
         "badge": "Tier 1 • Developer Tooling",
-        "overview": "CodeGraph helps engineers onboard onto unfamiliar GitHub repositories in seconds by statically parsing source files and ES module imports into an interactive, zoomable dependency graph.",
+        "role": "Creator & Full-Stack Next.js Engineer",
+        "overview": "CodeGraph accelerates codebase onboarding by turning any public GitHub repository into an interactive, zoomable dependency graph. Built on Next.js 15 App Router and TypeScript, it recursively parses ASTs and ES module imports, visualizes relationships with animated React Flow edges, and caches parsed graphs in Supabase PostgreSQL for instant repeat loads.",
         "highlights": [
           {
-            "value": "AST Parser",
-            "label": "Automated ES import & file tree extraction"
+            "value": "Next.js 15",
+            "label": "App Router + Server Actions + TypeScript"
+          },
+          {
+            "value": "AST Graph",
+            "label": "Recursive ES import & dependency mapping"
           },
           {
             "value": "React Flow",
-            "label": "Interactive zoom, pan & animated edges"
+            "label": "Animated path tracing & node inspection"
           },
           {
             "value": "Supabase",
-            "label": "PostgreSQL graph caching for instant reloads"
-          },
-          {
-            "value": "Next.js",
-            "label": "Full-stack TypeScript App Router build"
+            "label": "PostgreSQL graph caching & OpenRouter AI"
           }
         ],
-        "problem": "Understanding how modules connect in a new codebase requires manually jumping across dozens of files. Static directory trees show folder hierarchy, not actual import dependencies.",
+        "problem": "Onboarding onto a new repository usually requires opening dozens of files just to trace which modules import what. Standard GitHub file trees show folder nesting, not actual architectural coupling or dependency chains.",
+        "capabilities": [
+          "One-click GitHub URL ingestion that fetches repository trees and recursively resolves ES import/export graphs.",
+          "Interactive React Flow canvas with pan/zoom, animated dependency path highlighting, and node-level AI architectural summaries via OpenRouter.",
+          "Persistent Supabase PostgreSQL caching layer so previously analyzed repositories render instantaneously without burning GitHub API quota."
+        ],
         "architecture": [
-          "Repository Ingestion: Fetches repository file trees and source files via GitHub APIs and extracts ES module import/export edges.",
-          "Graph Visualization (React Flow): Renders modules as interactive nodes with animated dependency path tracing when hovering or selecting a file.",
-          "Persistence Layer (Supabase PostgreSQL): Caches parsed repository dependency graphs so repeat lookups render instantaneously without hitting GitHub API rate limits."
+          "Ingestion & AST Engine (Next.js Server Layer): Fetches repository trees via GitHub REST APIs, filters source modules, and extracts static import/export edges.",
+          "Path Resolution Normalizer: Maps relative imports (`./`, `../`, `@/` aliases, and `index.ts` barrels) onto canonical file paths so graph edges connect cleanly.",
+          "Visualization & Caching (React Flow + Supabase): Stores computed node/edge JSON in PostgreSQL and renders interactive directed graphs with TailwindCSS v4."
         ],
         "challenges": [
-          "Resolved relative import paths (`../`, `./`, index barrels) accurately across nested TypeScript/JavaScript folder structures so edges map cleanly to actual repository files.",
-          "Cached serialized graph structures in Supabase to keep repeated explorations fast and resilient against GitHub unauthenticated rate limits."
-        ]
+          "Solved edge-case relative import and barrel-file (`index.ts`) resolution across deeply nested TypeScript monorepos without false orphan nodes.",
+          "Bypassed GitHub unauthenticated rate-limit bottlenecks by persisting parsed dependency graphs in Supabase PostgreSQL keyed by repository commit state."
+        ],
+        "takeaway": "Showcases strong Next.js 15 + TypeScript full-stack ownership, compiler/AST fundamentals, PostgreSQL caching design, and polished data visualization—ideal for developer-experience and product engineering internships."
       }
     },
     {
       "id": "proj-arclane-autonomous-acquisition-engine",
       "slug": "arclane",
-      "name": "Arclane — Autonomous SMB Workflow & Deployment Engine",
+      "name": "Arclane — Autonomous SMB Website Builder & Growth Engine",
       "createdAt": "2026-05-26T16:26:58Z",
       "firstCommit": "2026-05-26T11:14:42Z",
       "firstCommitFormatted": "May 26, 2026 (11:14 UTC)",
       "url": "https://github.com/ameyasharma-ai/arclane-autonomous-acquisition-engine",
       "liveUrl": "",
       "githubUrl": "https://github.com/ameyasharma-ai/arclane-autonomous-acquisition-engine",
-      "description": "24/7 autonomous SMB workflow automation engine combining geographic business discovery, Next.js/Tailwind production site generation, programmatic Vercel REST deployments, and live Telegram Bot telemetry.",
+      "description": "Production v3.3.1 producer-consumer automation ecosystem that discovers Indian SMBs lacking a web presence, runs a 14-point AI strategic audit, automatically generates and deploys bespoke responsive websites to GitHub & Vercel, and orchestrates outreach via Telegram HUD, Local Web UI, and WhatsApp.",
       "isFork": false,
       "languages": [
         {
@@ -227,37 +248,46 @@
         }
       ],
       "caseStudy": {
-        "badge": "Tier 1 • Autonomous Systems",
-        "overview": "Arclane is a 24/7 autonomous workflow engine built to discover local SMBs lacking a modern web presence, generate tailored responsive Next.js/Tailwind web previews, deploy them programmatically to Vercel, and report live pipeline telemetry over Telegram.",
+        "badge": "Tier 1 • Autonomous Systems & Web Automation",
+        "role": "Principal Systems Architect & Automation Engineer",
+        "overview": "Arclane is an end-to-end, 24/7 autonomous business growth and web-generation platform built for Indian SMBs (clinics, gyms, salons, cafes). Using a Producer-Consumer streaming IPC architecture, it discovers local businesses without modern websites, crawls their social/web footprint for a 14-point AI audit, automatically builds and deploys bespoke responsive Tailwind/Next.js websites to GitHub and Vercel, updates a Google Sheets CRM, and coordinates outreach through a dual Telegram Bot + Local Web UI control plane.",
         "highlights": [
           {
-            "value": "24/7 Daemon",
-            "label": "Continuous micro-locality state machine"
+            "value": "Auto-Built Sites",
+            "label": "Programmatic Tailwind/Next.js site generation & Vercel deploy"
           },
           {
-            "value": "Vercel API",
-            "label": "Programmatic landing page deployments"
+            "value": "14-Point AI Audit",
+            "label": "Deep web & social crawler + LLM strategic scoring"
           },
           {
-            "value": "Telegram HUD",
-            "label": "Real-time bot controls & telemetry alerts"
+            "value": "24/7 Self-Healing",
+            "label": "Playwright watchdog + chunked memory-safe runner"
           },
           {
-            "value": "Dockerized",
-            "label": "Containerized worker & deduplication store"
+            "value": "Dual Control Plane",
+            "label": "Telegram Controller Bot + Local Web UI (:3000)"
           }
         ],
-        "problem": "Manual agency prospecting and custom preview site generation take hours per client and don't scale cleanly across fragmented local markets.",
+        "problem": "Millions of Indian SMBs rely solely on Google Maps listings without a fast, mobile-friendly website, while traditional agencies spend hours manually prospecting, auditing, designing preview sites, and tracking follow-ups in spreadsheets.",
+        "capabilities": [
+          "Automated Bespoke Website Builder & Vercel Deployer: Generates tailored, responsive Tailwind CSS / Next.js websites per business, creates/syncs GitHub repositories, and deploys live preview URLs directly to Vercel.",
+          "Producer-Consumer IPC Streaming Pipeline: Emits structured `[STREAM_LEAD]` JSON events over `stdout` from Playwright workers straight into the BI & website-generation consumer.",
+          "Deep Business Intelligence Engine: Crawls existing links/socials and runs a 14-point AI audit (Gemini Flash Lite + OpenRouter) to customize site copy and value propositions.",
+          "Dual Control Plane & CRM Sync: Synchronizes live pipeline states with Google Sheets CRM and lets operators monitor, pause, or trigger waves via Telegram Bot commands or the Local Web UI."
+        ],
         "architecture": [
-          "Discovery Worker (Node.js + Puppeteer): Executes bounded micro-locality grid hopping with coordinate jittering, rate limiting, and deduplication.",
-          "Preview Generator (Next.js + TailwindCSS): Hydrates responsive, mobile-first business landing pages dynamically from structured business metadata.",
-          "Deployment Pipeline: Pushes generated builds programmatically via Vercel REST APIs and tracks deployment status.",
-          "Control Plane: Exposes an interactive Telegram Bot HUD for pause/resume commands, locality status, and live conversion telemetry."
+          "1. Discovery & Watchdog (`scraper/`): Playwright engine executes bounded micro-locality grid hopping with multi-source phone extraction (`wa.me`, `tel:`, DOM regex) and `scraped_places.txt` deduplication.",
+          "2. Stream Runner & Controller (`controller_bot/`): Consumes `[STREAM_LEAD]` IPC events and manages `Asia/Kolkata` cron schedules for staggered outreach waves and deal-closing call scripts.",
+          "3. Deep BI & Automated Website Builder (`src/` + `web-dev-agency`): Runs the 14-point LLM audit, compiles custom responsive Tailwind/Next.js landing pages, pushes to GitHub, and triggers Vercel production deployments.",
+          "4. Multi-Channel Dispatch & CRM: Logs live deployed preview URLs back into Google Sheets and dispatches staggered WhatsApp Web / email notifications with human-like 30–75s delays."
         ],
         "challenges": [
-          "Added boundary exhaustion safeguards and persistent state checkpoints so long-running daemons recover gracefully after restarts without duplicating work.",
-          "Enforced strict environment separation and automated credential hygiene across both the engine repository and the nested web-dev-agency repository."
-        ]
+          "Eliminated long-running Chromium memory leaks by architecting `run_forever.py` to process 50-lead chunks and cleanly recycle browser processes, backed by a watchdog that auto-restarts deadlocked sessions after 3 minutes.",
+          "Built boundary exhaustion safeguards and persistent state checkpoints so 12-hour autopilot runs never duplicate businesses or lose progress on restart.",
+          "Enforced dual-repo Git synchronization (`auto_commit.js`) and strict secret hygiene across both the core engine and the nested `web-dev-agency` deployment repo."
+        ],
+        "takeaway": "Demonstrates rare end-to-end systems engineering: building resilient 24/7 worker daemons, IPC streaming pipelines, automated CI/CD website generation via GitHub/Vercel APIs, and production observability—ideal for backend, automation, and full-stack product internships."
       }
     },
     {
@@ -270,7 +300,7 @@
       "url": "https://github.com/ameyasharma-ai/Assistance-Device",
       "liveUrl": "",
       "githubUrl": "https://github.com/ameyasharma-ai/Assistance-Device",
-      "description": "Hardware-software accessibility assistant pairing live camera OCR vision with Bluetooth foot-pedal navigation and Gemini Flash-Lite reasoning for real-time audio study narration.",
+      "description": "Hands-free Kotlin Android accessibility and study device pairing Camera2 API live capture, Bluetooth foot-pedal hardware HID navigation, Gemini 2.0 Flash-Lite multimodal reasoning, and native Text-to-Speech narration.",
       "isFork": false,
       "languages": [
         {
@@ -288,44 +318,55 @@
       ],
       "caseStudy": {
         "badge": "Tier 2 • Mobile & Accessibility AI",
-        "overview": "A hands-free wearable study and reading assistant built in Kotlin for Android. It combines live camera capture, Gemini Flash-Lite multimodal reasoning, Bluetooth foot-pedal input events, and Text-to-Speech narration so users can study printed material without touching a screen.",
+        "role": "Android & Hardware Integration Developer",
+        "overview": "A hands-free wearable reading and study assistant written in Kotlin for Android. By combining hardware Bluetooth foot-pedal controls with the Android Camera2 API, Gemini 2.0 Flash-Lite vision reasoning, and native Text-to-Speech, it enables students and visually impaired users to scan, understand, and listen to printed textbooks or problem sets without touching a phone screen.",
         "highlights": [
           {
             "value": "Hands-Free",
-            "label": "Bluetooth foot-pedal hardware navigation"
+            "label": "Bluetooth foot-pedal hardware HID control"
           },
           {
-            "value": "Gemini AI",
-            "label": "Multimodal vision & study problem solving"
+            "value": "Camera2 API",
+            "label": "Low-latency native Android frame capture"
           },
           {
-            "value": "Kotlin",
-            "label": "Native Android camera & TTS pipeline"
+            "value": "Gemini 2.0",
+            "label": "Flash-Lite multimodal OCR & explanation"
+          },
+          {
+            "value": "Native TTS",
+            "label": "Instant spoken narration & replay controls"
           }
         ],
-        "problem": "Students with visual impairments or hands-busy study workflows struggle with touch-heavy mobile OCR apps that require constant screen tapping to capture, navigate, and replay audio.",
+        "problem": "Touch-based OCR mobile apps force users to hold a phone steady, tap small capture buttons, and scroll through dense text—making them unusable for hands-busy desk study or users with visual/motor impairments.",
+        "capabilities": [
+          "Physical Bluetooth foot-pedal event bus allowing eyes-free page capture, section navigation, and audio replay.",
+          "High-clarity image capture via Android Camera2 API streamed directly to Gemini 2.0 Flash-Lite for OCR and step-by-step explanations.",
+          "Speech-friendly audio narration via Android's native Text-to-Speech engine."
+        ],
         "architecture": [
-          "Input Bus (Kotlin + Android Bluetooth HID): Maps physical foot-pedal key events to capture, next/previous section, and audio replay actions.",
-          "Vision & Reasoning: Captures frames from the Android camera and dispatches them to Gemini Flash-Lite for structured text extraction and concise explanations.",
-          "Audio Feedback: Streams responses through Android's native Text-to-Speech engine with low-latency playback controls."
+          "Hardware Input Layer (Kotlin HID Listener): Intercepts Bluetooth foot-pedal key events and maps single/double-press gestures to capture, pause, and repeat commands.",
+          "Vision Capture Pipeline (Camera2): Focuses and snaps high-resolution document frames on pedal trigger without requiring screen interaction.",
+          "Multimodal Reasoning & Audio Output: Sends image payloads to Gemini 2.0 Flash-Lite with speech-optimized prompting, then streams the response into Android TTS."
         ],
         "challenges": [
-          "Debounced hardware foot-pedal key events to prevent accidental double-captures during rapid page turning.",
-          "Optimized prompt framing for Gemini Flash-Lite so spoken TTS output stays concise and easy to follow without reading raw markdown punctuation aloud."
-        ]
+          "Debounced hardware foot-pedal key events in Kotlin to eliminate accidental double-triggers during rapid page turns.",
+          "Engineered TTS-safe prompt instructions for Gemini Flash-Lite so equations and lists are spoken naturally instead of reading raw markdown symbols aloud."
+        ],
+        "takeaway": "Shows versatility beyond web apps—native Kotlin/Android development, hardware HID integration, and human-centered accessibility engineering."
       }
     },
     {
       "id": "proj-robot",
       "slug": "robot",
-      "name": "Robot — Multimodal AI Voice & Hardware Engine",
+      "name": "Robot — Local-First Humanoid Robot Intelligence Engine",
       "createdAt": "2026-09-28T07:47:34Z",
       "firstCommit": "2026-09-29T11:10:08Z",
       "firstCommitFormatted": "Sep 29, 2026 (11:10 UTC)",
       "url": "https://github.com/ameyasharma-ai/robot",
       "liveUrl": "",
       "githubUrl": "https://github.com/ameyasharma-ai/robot",
-      "description": "Edge computing and multimodal AI robotics pipeline orchestrating localized sensory telemetry, speech synthesis, and dual-column LLM inference routers.",
+      "description": "Local-first humanoid robot AI engine combining Python asyncio, WebRTC AEC/NS, Silero VAD (<200ms barge-in), Piper ONNX TTS, llama.cpp (Qwen3.5-4B), YOLOv8 + YuNet 60 FPS spatial vision, WebGL2/Three.js 3D avatar, and a dual-column custom API router.",
       "isFork": false,
       "languages": [
         {
@@ -343,31 +384,45 @@
       ],
       "caseStudy": {
         "badge": "Tier 2 • Edge AI & Robotics",
-        "overview": "Robot is a modular Python + FastAPI + Next.js voice and hardware orchestration engine built to unify real-time speech synthesis, tool execution, telemetry, and configurable dual-column custom LLM APIs.",
+        "role": "AI Systems & Edge Robotics Architect",
+        "overview": "Robot Core is a local-first humanoid intelligence engine engineered to run real-time speech, spatial computer vision, and 3D avatar rendering on edge hardware. It pairs a Python asyncio + FastAPI core (Silero VAD, WebRTC echo cancellation, llama.cpp Qwen3.5-4B, Piper ONNX TTS, and 60 FPS YOLOv8/YuNet vision) with a WebGL2/Three.js frontend and a hot-swappable Dual-Column Custom LLM API.",
         "highlights": [
           {
-            "value": "FastAPI",
-            "label": "Modular Python engine & telemetry API"
+            "value": "< 200ms",
+            "label": "Full-duplex Silero VAD barge-in latency"
           },
           {
-            "value": "Dual-API",
-            "label": "Custom OpenRouter + AI Credits routing"
+            "value": "60 FPS",
+            "label": "OpenCV + YuNet + YOLOv8 spatial tracking"
           },
           {
-            "value": "Edge TTS",
-            "label": "Streaming MP3 voice synthesis proxy"
+            "value": "Local-First",
+            "label": "llama.cpp (Qwen3.5-4B) + Piper ONNX TTS"
+          },
+          {
+            "value": "Pytest Suite",
+            "label": "Unit-tested Dual-Column API & WebGL2 UI"
           }
         ],
-        "problem": "Robotics and edge assistant prototypes often tightly couple hardware control loops to a single cloud LLM vendor, making offline testing, provider switching, and audio telemetry brittle.",
+        "problem": "Cloud-only robotics prototypes break whenever Wi-Fi drops, suffer from speaker-to-mic acoustic feedback loops, and lock hardware teams into a single LLM vendor.",
+        "capabilities": [
+          "Local-first conversational pipeline with WebRTC Acoustic Echo Cancellation (AEC), Noise Suppression (NS), Silero VAD, and offline Piper ONNX TTS.",
+          "60 FPS real-time face detection and spatial object tracking powered by OpenCV, YuNet, and YOLOv8.",
+          "WebGL2 / Three.js 3D humanoid avatar synchronized with assistant speech states and personalities.",
+          "Dual-Column Custom API supporting hot-swappable OpenRouter and custom OpenAI-compatible inference providers alongside a Next.js Edge TTS proxy."
+        ],
         "architecture": [
-          "Core Engine (Python + FastAPI): Manages assistant state modes, active personalities, turn counts, and tool integrations.",
-          "Dual-Column LLM Router: Supports hot-swapping OpenAI-compatible providers (OpenRouter and custom inference endpoints) with unit-tested configuration persistence.",
-          "Voice Synthesis Edge Route (Next.js Edge Runtime): Streams synthesized SSML audio directly to the browser's Web Audio player."
+          "Audio & Barge-In Loop (Python asyncio): WebRTC AEC/NS cleans microphone input from speaker bleed, allowing Silero VAD to trigger <200ms barge-in interruptions.",
+          "Local + Cloud Dual Inference: Runs Qwen3.5-4B locally via `llama.cpp` or routes seamlessly through the FastAPI Dual-Column Custom API (OpenRouter / custom endpoints).",
+          "Spatial Vision Pipeline: Processes camera feeds at 60 FPS using YuNet face landmarks and YOLOv8 object detection.",
+          "Frontend & Voice Edge Route (Next.js + Three.js): Renders the interactive WebGL2 avatar and provides an Edge Runtime TTS synthesis endpoint."
         ],
         "challenges": [
-          "Designed comprehensive pytest unit test suites with mocked engine fixtures to validate dual-provider configuration updates safely.",
-          "Parameterized client tokens and scrubbed historical OAuth caches from Git history to enforce strict open-source security hygiene."
-        ]
+          "Prevented the robot from hearing and transcribing its own voice by integrating WebRTC AEC/NS ahead of Silero VAD.",
+          "Built deterministic pytest unit tests with mocked engine fixtures to validate dual-provider config persistence and API updates safely.",
+          "Hardened repository security by parameterizing client tokens and scrubbing historical OAuth cache files across Git history."
+        ],
+        "takeaway": "Demonstrates deep systems-level AI engineering—combining edge inference (`llama.cpp`, ONNX), real-time computer vision (YOLOv8 at 60 FPS), DSP audio hygiene (WebRTC AEC), and tested FastAPI + Next.js integration."
       }
     }
   ]
