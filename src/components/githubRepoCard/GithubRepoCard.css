@@ -77,20 +77,26 @@
 
 .repo-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .repo-creation-date {
   margin: 0;
   font-family: "Google Sans Regular";
   font-weight: 400;
-  margin-left: 0px;
-  margin-right: auto;
+  text-align: left;
 }
 
 .repo-languages {
-  margin-left: auto;
-  margin-right: 0px;
+  width: 100%;
+  margin: 0;
+}
+
+.repo-languages .dev-icons-languages {
+  text-align: left;
 }
 
 @media (max-width: 1200px) {

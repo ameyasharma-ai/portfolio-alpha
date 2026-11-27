@@ -305,7 +305,7 @@
       "languages": [
         {
           "name": "Kotlin",
-          "iconifyClass": "logos-kotlin"
+          "iconifyClass": "simple-icons:kotlin"
         },
         {
           "name": "Gemini API",
