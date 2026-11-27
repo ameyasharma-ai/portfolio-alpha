@@ -34,8 +34,8 @@ class ProjectCaseStudy extends Component {
         >
           <Header theme={theme} />
           <div
-            className="case-study-container"
-            style={{ textAlign: "center", padding: "80px 24px" }}
+            className="case-study-wrapper"
+            style={{ textAlign: "center", padding: "80px 0" }}
           >
             <h1 style={{ color: theme.text }}>Case Study Not Found</h1>
             <p style={{ color: theme.secondaryText, marginBottom: "24px" }}>
@@ -65,56 +65,61 @@ class ProjectCaseStudy extends Component {
     return (
       <div className="case-study-main" style={{ backgroundColor: theme.body }}>
         <Header theme={theme} />
-        <div className="case-study-container">
-          <Link
-            to="/projects"
-            className="case-study-back"
-            style={{
-              color: theme.text,
-              backgroundColor: theme.highlight,
-            }}
-          >
-            ← Back to Projects
-          </Link>
-
-          <Fade bottom duration={1200} distance="25px">
-            <div
-              className="case-study-hero"
+        <div className="case-study-wrapper">
+          <div className="case-study-topbar">
+            <Link
+              to="/projects"
+              className="case-study-back"
               style={{
+                color: theme.text,
                 backgroundColor: theme.highlight,
-                border: `1px solid ${theme.text}18`,
               }}
             >
-              {cs.badge && (
+              ← Back to Projects
+            </Link>
+          </div>
+
+          <Fade bottom duration={1200} distance="25px">
+            <div className="case-study-hero">
+              <div className="case-study-badge-row">
+                {cs.badge && (
+                  <span
+                    className="case-study-badge"
+                    style={{
+                      backgroundColor: theme.highlight,
+                      color: theme.text,
+                    }}
+                  >
+                    {cs.badge}
+                  </span>
+                )}
                 <span
-                  className="case-study-badge"
-                  style={{
-                    backgroundColor: theme.text,
-                    color: theme.body,
-                  }}
+                  className="case-study-meta"
+                  style={{ color: theme.secondaryText }}
                 >
-                  {cs.badge}
+                  <span role="img" aria-label="calendar">
+                    🗓️
+                  </span>{" "}
+                  First Commit:{" "}
+                  <strong>
+                    {project.firstCommitFormatted ||
+                      project.createdAt.split("T")[0]}
+                  </strong>
                 </span>
-              )}
+              </div>
+
               <h1 className="case-study-title" style={{ color: theme.text }}>
                 {project.name}
               </h1>
+
               <p
-                className="case-study-meta"
+                className="case-study-lead"
                 style={{ color: theme.secondaryText }}
               >
-                <span role="img" aria-label="calendar">
-                  🗓️
-                </span>{" "}
-                <strong>First Commit:</strong>{" "}
-                {project.firstCommitFormatted ||
-                  project.createdAt.split("T")[0]}
-              </p>
-              <p className="case-study-lead" style={{ color: theme.text }}>
                 {cs.overview || project.description}
               </p>
 
-              <div style={{ marginBottom: "18px" }}>
+              <div className="case-study-langs">
                 <ProjectLanguages logos={project.languages} />
               </div>
 
@@ -140,9 +145,8 @@ class ProjectCaseStudy extends Component {
                     rel="noopener noreferrer"
                     className="case-study-action-btn"
                     style={{
-                      backgroundColor: theme.body,
+                      backgroundColor: theme.highlight,
                       color: theme.text,
-                      border: `1.5px solid ${theme.text}40`,
                     }}
                   >
                     GitHub Repository ↗
@@ -161,7 +165,6 @@ class ProjectCaseStudy extends Component {
                     className="case-study-metric-card"
                     style={{
                       backgroundColor: theme.highlight,
-                      border: `1px solid ${theme.text}15`,
                     }}
                   >
                     <div
@@ -172,7 +175,7 @@ class ProjectCaseStudy extends Component {
                     </div>
                     <div
                       className="case-study-metric-label"
-                      style={{ color: theme.secondaryText }}
+                      style={{ color: theme.text }}
                     >
                       {item.label}
                     </div>
@@ -182,63 +185,65 @@ class ProjectCaseStudy extends Component {
             </Fade>
           )}
 
-          {cs.problem && (
-            <Fade bottom duration={1200} distance="20px">
-              <section
-                className="case-study-section"
-                style={{
-                  backgroundColor: theme.body,
-                  border: `1px solid ${theme.text}18`,
-                }}
-              >
-                <h2
-                  className="case-study-section-title"
-                  style={{ color: theme.text }}
+          <div className="case-study-grid">
+            {cs.problem && (
+              <Fade bottom duration={1200} distance="20px">
+                <section
+                  className="case-study-section"
+                  style={{
+                    backgroundColor: theme.body,
+                    border: `1px solid ${theme.text}20`,
+                  }}
                 >
-                  <span role="img" aria-label="target">
-                    🎯
-                  </span>{" "}
-                  Problem & Motivation
-                </h2>
-                <p
-                  className="case-study-paragraph"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {cs.problem}
-                </p>
-              </section>
-            </Fade>
-          )}
+                  <h2
+                    className="case-study-section-title"
+                    style={{
+                      color: theme.text,
+                      borderBottom: `1px solid ${theme.text}18`,
+                    }}
+                  >
+                    Problem & Engineering Goal
+                  </h2>
+                  <p
+                    className="case-study-paragraph"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {cs.problem}
+                  </p>
+                </section>
+              </Fade>
+            )}
 
-          {cs.architecture && cs.architecture.length > 0 && (
-            <Fade bottom duration={1200} distance="20px">
-              <section
-                className="case-study-section"
-                style={{
-                  backgroundColor: theme.body,
-                  border: `1px solid ${theme.text}18`,
-                }}
-              >
-                <h2
-                  className="case-study-section-title"
-                  style={{ color: theme.text }}
+            {cs.architecture && cs.architecture.length > 0 && (
+              <Fade bottom duration={1200} distance="20px">
+                <section
+                  className="case-study-section"
+                  style={{
+                    backgroundColor: theme.body,
+                    border: `1px solid ${theme.text}20`,
+                  }}
                 >
-                  <span role="img" aria-label="architecture">
-                    ⚙️
-                  </span>{" "}
-                  System Architecture
-                </h2>
-                <ul
-                  className="case-study-list"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {cs.architecture.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
-                </ul>
-              </section>
-            </Fade>
-          )}
+                  <h2
+                    className="case-study-section-title"
+                    style={{
+                      color: theme.text,
+                      borderBottom: `1px solid ${theme.text}18`,
+                    }}
+                  >
+                    End-to-End Architecture
+                  </h2>
+                  <ul
+                    className="case-study-list"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {cs.architecture.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </section>
+              </Fade>
+            )}
+          </div>
 
           {cs.challenges && cs.challenges.length > 0 && (
             <Fade bottom duration={1200} distance="20px">
@@ -246,17 +251,17 @@ class ProjectCaseStudy extends Component {
                 className="case-study-section"
                 style={{
                   backgroundColor: theme.body,
-                  border: `1px solid ${theme.text}18`,
+                  border: `1px solid ${theme.text}20`,
                 }}
               >
                 <h2
                   className="case-study-section-title"
-                  style={{ color: theme.text }}
+                  style={{
+                    color: theme.text,
+                    borderBottom: `1px solid ${theme.text}18`,
+                  }}
                 >
-                  <span role="img" aria-label="wrench">
-                    🛠️
-                  </span>{" "}
-                  Key Engineering Decisions
+                  Production Decisions & Key Takeaways
                 </h2>
                 <ul
                   className="case-study-list"
@@ -280,13 +285,12 @@ class ProjectCaseStudy extends Component {
                 className="case-study-nav-card"
                 style={{
                   backgroundColor: theme.highlight,
-                  border: `1px solid ${theme.text}15`,
                   textAlign: "left",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "12px",
+                    fontSize: "12.5px",
                     color: theme.secondaryText,
                     marginBottom: "4px",
                   }}
@@ -304,7 +308,7 @@ class ProjectCaseStudy extends Component {
                 </div>
               </Link>
             ) : (
-              <div style={{ flex: "1 1 260px" }} />
+              <div style={{ flex: "1 1 280px" }} />
             )}
 
             {nextProject ? (
@@ -313,13 +317,12 @@ class ProjectCaseStudy extends Component {
                 className="case-study-nav-card"
                 style={{
                   backgroundColor: theme.highlight,
-                  border: `1px solid ${theme.text}15`,
                   textAlign: "right",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "12px",
+                    fontSize: "12.5px",
                     color: theme.secondaryText,
                     marginBottom: "4px",
                   }}
@@ -337,7 +340,7 @@ class ProjectCaseStudy extends Component {
                 </div>
               </Link>
             ) : (
-              <div style={{ flex: "1 1 260px" }} />
+              <div style={{ flex: "1 1 280px" }} />
             )}
           </div>
         </div>

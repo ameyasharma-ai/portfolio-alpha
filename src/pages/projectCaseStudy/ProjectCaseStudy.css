@@ -3,10 +3,17 @@
   min-height: 100vh;
 }
 
-.case-study-container {
-  max-width: 1060px;
+.case-study-wrapper {
+  width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 24px 24px 60px;
+  padding: 20px 0 60px;
+}
+
+.case-study-topbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
 }
 
 .case-study-back {
@@ -15,11 +22,9 @@
   gap: 8px;
   font-family: "Google Sans Medium", sans-serif;
   font-size: 15px;
-  font-weight: 600;
   text-decoration: none;
-  margin-bottom: 24px;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -28,11 +33,20 @@
   opacity: 0.85;
 }
 
+/* Hero matches Projects.css & Experience.css airy centered style */
 .case-study-hero {
-  border-radius: 16px;
-  padding: 36px 32px;
-  margin-bottom: 32px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  max-width: 920px;
+  margin: 10px auto 44px;
+}
+
+.case-study-badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .case-study-badge {
@@ -40,111 +54,127 @@
   font-family: "Google Sans Medium", sans-serif;
   font-size: 12.5px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
-  margin-bottom: 14px;
-}
-
-.case-study-title {
-  font-family: "Google Sans Bold", sans-serif;
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 0 0 12px 0;
 }
 
 .case-study-meta {
   font-family: "Google Sans Regular", sans-serif;
   font-size: 14px;
+}
+
+.case-study-title {
+  font-family: "Google Sans Medium", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.15;
   margin: 0 0 18px 0;
 }
 
 .case-study-lead {
   font-family: "Google Sans Regular", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.65;
-  margin: 0 0 24px 0;
+  margin: 0 auto 24px;
+}
+
+/* Override ProjectLanguages right alignment inside Case Study hero */
+.case-study-langs .dev-icons-languages {
+  text-align: center !important;
+}
+
+.case-study-langs .software-skill-inline-languages {
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .case-study-actions {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 22px;
-  align-items: center;
+  gap: 16px;
+  margin-top: 26px;
 }
 
 .case-study-action-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 11px 22px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
   font-family: "Google Sans Medium", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .case-study-action-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.3);
 }
 
+/* Highlights strip matches GithubRepoCard style */
 .case-study-metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
   margin-bottom: 36px;
 }
 
 .case-study-metric-card {
-  border-radius: 12px;
-  padding: 20px 18px;
-  text-align: left;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 22px 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 10px 30px -15px;
 }
 
 .case-study-metric-val {
   font-family: "Google Sans Bold", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .case-study-metric-label {
   font-family: "Google Sans Regular", sans-serif;
-  font-size: 13.5px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* Two-column engineering grid */
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 36px;
 }
 
 .case-study-section {
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 28px 30px;
-  margin-bottom: 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 10px 30px -15px;
+  text-align: left;
 }
 
 .case-study-section-title {
-  font-family: "Google Sans Bold", sans-serif;
+  font-family: "Google Sans Medium", sans-serif;
   font-size: 22px;
+  font-weight: 600;
   margin: 0 0 14px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding-bottom: 10px;
 }
 
 .case-study-paragraph {
   font-family: "Google Sans Regular", sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  margin: 0 0 12px 0;
+  margin: 0;
 }
 
 .case-study-list {
-  margin: 10px 0 0 0;
+  margin: 6px 0 0 0;
   padding-left: 20px;
 }
 
@@ -152,7 +182,7 @@
   font-family: "Google Sans Regular", sans-serif;
   font-size: 15.5px;
   line-height: 1.65;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .case-study-nav-footer {
@@ -160,29 +190,33 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 38px;
-  padding-top: 24px;
+  margin-top: 40px;
+  padding-top: 28px;
 }
 
 .case-study-nav-card {
-  flex: 1 1 260px;
-  padding: 16px 20px;
-  border-radius: 12px;
+  flex: 1 1 280px;
+  padding: 18px 22px;
+  border-radius: 6px;
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px -12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .case-study-nav-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 28px -12px;
 }
 
 @media (max-width: 768px) {
-  .case-study-hero {
-    padding: 24px 20px;
-  }
   .case-study-title {
-    font-size: 26px;
+    font-size: 30px;
+  }
+  .case-study-lead {
+    font-size: 16px;
+  }
+  .case-study-grid {
+    grid-template-columns: 1fr;
   }
   .case-study-section {
     padding: 22px 18px;
